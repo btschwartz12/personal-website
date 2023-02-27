@@ -1,15 +1,15 @@
 {
     "social": [
         {
-            "network" : "linkedin",
+            "name" : "linkedin",
             "href": "https://linkedin.com/"
         },
         {
-            "network" : "github",
+            "name" : "github",
             "href": "https://github.com/mayankagarwal09"
         },
         {
-            "network" : "email",
+            "name" : "email",
             "href": "mailto:test@test.com"
         }
     ]

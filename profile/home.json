@@ -1,4 +1,32 @@
 {
     "name": "Your Name",
-    "roles": ["a Developer", "a Freelancer"]
+    "title": "Your Title",
+    "description": "Your Description",
+
+    "greetings": "Hello, I'm Bob",
+    "animated_text": [
+        "a Web Developer",
+        "a Graphic Designer",
+        "a Freelancer"
+    ],
+    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    "img_url": "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+
+    "buttons": [
+        {
+            "name": "Me",
+            "route": "/about",
+            "id": "button_p"
+        },
+        {
+            "name": "Contact Me",
+            "route": "/contact",
+            "id": "button_h"
+        },
+        {
+            "name": "Projects",
+            "route": "/projects",
+            "id": "button_h"
+        }
+    ]
 }
