@@ -1,0 +1,29 @@
+{
+    "interests": [{
+
+        "title": "Interests",
+        "items" : [
+            {
+                "icon": "images/skills/java.png",
+                "title": "Java"
+            },
+            {
+                "icon": "images/skills/php.png",
+                "title": "PHP"
+            },
+            {
+                "icon": "images/skills/js.png",
+                "title": "JavaScript"
+            },
+            {
+                "icon": "images/skills/python.png",
+                "title": "Python"
+            },
+            {
+                "icon": "images/skills/mysql.png",
+                "title": "MySQL"
+            }
+        ]
+    }]
+}
+    
