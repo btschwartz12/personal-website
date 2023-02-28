@@ -25,13 +25,18 @@
             "id": "button_h"
         },
         {
-            "name": "Resume",
-            "route": "https://drive.google.com/file/d/1wCPzd7fiAko-PfaizeCkd8ZChVdLK7eA/view?usp=sharing",
+            "name": "Experience",
+            "route": "/experience",
             "id": "button_h"
         },
         {
-            "name": "Contact",
-            "route": "/contact",
+            "name": "Education",
+            "route": "/education",
+            "id": "button_h"
+        },
+        {
+            "name": "Resume",
+            "route": "https://drive.google.com/file/d/1wCPzd7fiAko-PfaizeCkd8ZChVdLK7eA/view?usp=sharing",
             "id": "button_h"
         }
     ]
