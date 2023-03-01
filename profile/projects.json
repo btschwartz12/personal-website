@@ -18,10 +18,35 @@
                     "href": "https://mayankagarwal.me"
                 }
             ],
-            "tags" : [
-                "React",
-                "Portfolio",
-                "JavaScript"
+            "tags": [
+                {
+                    "text": "Python",
+                    "color": "blue"
+                },
+                {
+                    "text": "Django",
+                    "color": "green"
+                },
+                {
+                    "text": "BootStrap",
+                    "color": "cyan"
+                },
+                {
+                    "text": "SendGrid",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Heroku",
+                    "color": "red"
+                },
+                {
+                    "text": "Gunicorn",
+                    "color": "gray"
+                },
+                {
+                    "text": "VIT",
+                    "color": "white"
+                }
             ]
         },
         {
@@ -42,14 +67,35 @@
                     "href": "http://caaring.herokuapp.com"
                 }
             ],
-            "tags" : [
-                "Python",
-                "Django",
-                "BootStrap",
-                "SendGrid",
-                "Heroku",
-                "Gunicorn",
-                "VIT"
+            "tags": [
+                {
+                    "text": "Python",
+                    "color": "blue"
+                },
+                {
+                    "text": "Django",
+                    "color": "green"
+                },
+                {
+                    "text": "BootStrap",
+                    "color": "cyan"
+                },
+                {
+                    "text": "SendGrid",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Heroku",
+                    "color": "red"
+                },
+                {
+                    "text": "Gunicorn",
+                    "color": "gray"
+                },
+                {
+                    "text": "VIT",
+                    "color": "white"
+                }
             ]
         },
         {
@@ -66,11 +112,35 @@
                     "href": "https://github.com/mayankagarwal09/QuietHours-Android"
                 }
             ],
-            "tags" : [
-                "Java",
-                "Android",
-                "Alarm Manager",
-                "VIT"
+            "tags": [
+                {
+                    "text": "Python",
+                    "color": "blue"
+                },
+                {
+                    "text": "Django",
+                    "color": "green"
+                },
+                {
+                    "text": "BootStrap",
+                    "color": "cyan"
+                },
+                {
+                    "text": "SendGrid",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Heroku",
+                    "color": "red"
+                },
+                {
+                    "text": "Gunicorn",
+                    "color": "gray"
+                },
+                {
+                    "text": "VIT",
+                    "color": "white"
+                }
             ]
         },
         {
@@ -86,11 +156,35 @@
                     "href": "https://github.com/mayankagarwal09/SecureChatApp"
                 }
             ],
-            "tags" : [
-                "Java",
-                "Android",
-                "Firebase",
-                "RSA"
+            "tags": [
+                {
+                    "text": "Python",
+                    "color": "blue"
+                },
+                {
+                    "text": "Django",
+                    "color": "green"
+                },
+                {
+                    "text": "BootStrap",
+                    "color": "cyan"
+                },
+                {
+                    "text": "SendGrid",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Heroku",
+                    "color": "red"
+                },
+                {
+                    "text": "Gunicorn",
+                    "color": "gray"
+                },
+                {
+                    "text": "VIT",
+                    "color": "white"
+                }
             ]
         },
         {
@@ -106,15 +200,35 @@
                     "href": "https://github.com/mayankagarwal09/mvvm-sample-app"
                 }
             ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Room",
-                "Coroutines",
-                "Flow",
-                "Hilt-Dagger",
-                "NetworkBoundResource"
+            "tags": [
+                {
+                    "text": "Python",
+                    "color": "blue"
+                },
+                {
+                    "text": "Django",
+                    "color": "green"
+                },
+                {
+                    "text": "BootStrap",
+                    "color": "cyan"
+                },
+                {
+                    "text": "SendGrid",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Heroku",
+                    "color": "red"
+                },
+                {
+                    "text": "Gunicorn",
+                    "color": "gray"
+                },
+                {
+                    "text": "VIT",
+                    "color": "white"
+                }
             ]
         },
         {
@@ -130,13 +244,35 @@
                     "href": "https://github.com/mayankagarwal09/Paginated-App-Feeds-List"
                 }
             ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Paging 3",
-                "Coroutines",
-                "Flow"
+            "tags": [
+                {
+                    "text": "Python",
+                    "color": "blue"
+                },
+                {
+                    "text": "Django",
+                    "color": "green"
+                },
+                {
+                    "text": "BootStrap",
+                    "color": "cyan"
+                },
+                {
+                    "text": "SendGrid",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Heroku",
+                    "color": "red"
+                },
+                {
+                    "text": "Gunicorn",
+                    "color": "gray"
+                },
+                {
+                    "text": "VIT",
+                    "color": "white"
+                }
             ]
         },
         {
@@ -152,10 +288,35 @@
                     "href": "https://github.com/mayankagarwal09/task-tracker-app"
                 }
             ],
-            "tags" : [
-                "TypeScript",
-                "Angular 12",
-                "JavaScript"
+            "tags": [
+                {
+                    "text": "Python",
+                    "color": "blue"
+                },
+                {
+                    "text": "Django",
+                    "color": "green"
+                },
+                {
+                    "text": "BootStrap",
+                    "color": "cyan"
+                },
+                {
+                    "text": "SendGrid",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Heroku",
+                    "color": "red"
+                },
+                {
+                    "text": "Gunicorn",
+                    "color": "gray"
+                },
+                {
+                    "text": "VIT",
+                    "color": "white"
+                }
             ]
         },
         {
@@ -171,11 +332,35 @@
                     "href": "https://github.com/mayankagarwal09/img-encrypt-sdes"
                 }
             ],
-            "tags" : [
-                "Python",
-                "Django",
-                "SDES",
-                "Cryptography"
+            "tags": [
+                {
+                    "text": "Python",
+                    "color": "blue"
+                },
+                {
+                    "text": "Django",
+                    "color": "green"
+                },
+                {
+                    "text": "BootStrap",
+                    "color": "cyan"
+                },
+                {
+                    "text": "SendGrid",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Heroku",
+                    "color": "red"
+                },
+                {
+                    "text": "Gunicorn",
+                    "color": "gray"
+                },
+                {
+                    "text": "VIT",
+                    "color": "white"
+                }
             ]
         }
     ]
