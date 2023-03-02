@@ -1,4 +1,9 @@
 {
+    "meta": {
+        "title": "Ben Schwartz | Projects",
+        "description": "TODO"
+    },
+    
     "projects" : [
         {
             "is_featured": true,
