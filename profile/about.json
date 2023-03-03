@@ -5,30 +5,30 @@
     },
     
     "COMMENT": "TRY QUASIQUOTES",
-    "about": " This is where you can describe about **yourself**. The more you describe about yourself, the better it is!\n\n\nExtra Information about you, like hobbies and your goals.\nExample Paragraph: I am passionate about my work. Because I love what I do, I have a steady source of motivation that drives me to do my best. In my last job, this passion led me to challenge myself daily and learn new skills that helped me to do better work. For example, I taught myself how to use Photoshop to improve the quality of our photos and graphics. I soon became the go-to person for any design needs.",
+    "about": "This is where you can describe about **yourself**. The more you describe about yourself, the better it is!\n\n\nExtra Information about you, like hobbies and your goals.\nExample Paragraph: I am passionate about my work. Because I love what I do, I have a steady source of motivation that drives me to do my best. In my last job, this passion led me to challenge myself daily and learn new skills that helped me to do better work. For example, I taught myself how to use Photoshop to improve the quality of our photos and graphics. I soon became the go-to person for any design needs.",
     "imageSource": "images/about/profile.png",
     "icons": [
         {
             "title": "Interests",
             "items" : [
                 {
-                    "icon": "images/skills/java.png",
+                    "icon": "images/about/icons/java.png",
                     "title": "Java"
                 },
                 {
-                    "icon": "images/skills/php.png",
+                    "icon": "images/about/icons/php.png",
                     "title": "PHP"
                 },
                 {
-                    "icon": "images/skills/js.png",
+                    "icon": "images/about/icons/js.png",
                     "title": "JavaScript"
                 },
                 {
-                    "icon": "images/skills/python.png",
+                    "icon": "images/about/icons/python.png",
                     "title": "Python"
                 },
                 {
-                    "icon": "images/skills/mysql.png",
+                    "icon": "images/about/icons/mysql.png",
                     "title": "MySQL"
                 }
             ]
@@ -37,23 +37,23 @@
             "title": "Languages & Databases",
             "items" : [
                 {
-                    "icon": "images/skills/java.png",
+                    "icon": "images/about/icons/java.png",
                     "title": "Java"
                 },
                 {
-                    "icon": "images/skills/php.png",
+                    "icon": "images/about/icons/php.png",
                     "title": "PHP"
                 },
                 {
-                    "icon": "images/skills/js.png",
+                    "icon": "images/about/icons/js.png",
                     "title": "JavaScript"
                 },
                 {
-                    "icon": "images/skills/python.png",
+                    "icon": "images/about/icons/python.png",
                     "title": "Python"
                 },
                 {
-                    "icon": "images/skills/mysql.png",
+                    "icon": "images/about/icons/mysql.png",
                     "title": "MySQL"
                 }
             ]
@@ -62,15 +62,15 @@
             "title": "Frameworks & Technologies",
             "items" : [
                 {
-                    "icon": "images/skills/android_new.png",
+                    "icon": "images/about/icons/android_new.png",
                     "title": "Android"
                 },
                 {
-                    "icon": "images/skills/react.png",
+                    "icon": "images/about/icons/react.png",
                     "title": "React"
                 },
                 {
-                    "icon": "images/skills/nodejs.png",
+                    "icon": "images/about/icons/nodejs.png",
                     "title": "Nodejs"
                 }
             ]
@@ -79,15 +79,15 @@
             "title" : "Tools & Platforms",
             "items": [
                 {
-                    "icon": "images/skills/android-studio.png",
+                    "icon": "images/about/icons/android-studio.png",
                     "title": "Android Studio"
                 },
                 {
-                    "icon": "images/skills/git.png",
+                    "icon": "images/about/icons/git.png",
                     "title": "Git"
                 },
                 {
-                    "icon": "images/skills/docker.png",
+                    "icon": "images/about/icons/docker.png",
                     "title": "Docker"
                 }
             ]

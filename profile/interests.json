@@ -4,23 +4,23 @@
         "title": "Interests",
         "items" : [
             {
-                "icon": "images/skills/java.png",
+                "icon": "images/about/icons/java.png",
                 "title": "Java"
             },
             {
-                "icon": "images/skills/php.png",
+                "icon": "images/about/icons/php.png",
                 "title": "PHP"
             },
             {
-                "icon": "images/skills/js.png",
+                "icon": "images/about/icons/js.png",
                 "title": "JavaScript"
             },
             {
-                "icon": "images/skills/python.png",
+                "icon": "images/about/icons/python.png",
                 "title": "Python"
             },
             {
-                "icon": "images/skills/mysql.png",
+                "icon": "images/about/icons/mysql.png",
                 "title": "MySQL"
             }
         ]

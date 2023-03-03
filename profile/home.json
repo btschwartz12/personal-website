@@ -1,21 +1,16 @@
 {
     "meta": {
-        "title": "Ben Schwartz | Home",
+        "title": "Ben Schwartz",
         "description": "TODO"
     },
     
-    
-    "name": "Your Name",
-    "title": "Your Title",
-    "description": "Your Description",
 
-    "greetings": "Hello, I'm Bob",
+    "greetings": "Hi, I'm Ben",
     "animated_text": [
-        "a Web Developer",
-        "a Graphic Designer",
-        "a Freelancer"
+        "I build things for the Web",
+        "I'm a big-time coder"
     ],
-    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    "about": "Junior at the University of Michigan studying Computer Science. Software Developer Intern at Hyland Software. Check out my dogs, then the buttons below!",
     "img_url": "images/home/picture.png",
 
     "buttons": [
