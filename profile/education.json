@@ -263,6 +263,54 @@
         },
         {
             "category": "Courses",
+            "rightBubble": "",
+            "leftBubble": "",
+            "title": "Computer Science Theory",
+            "bodyText": "EECS 376: Introduction to Computer Science theory, with applications. Design and analysis of algorithms, and paradigms, fundamentals of computability and complexity with Turing machine theory, randomized algorithms, and applications of computational hardness to cryptography.",
+            "links": [
+                {
+                    "text": "Class Website",
+                    "data": "https://eecs376.org"
+                }
+            ],
+            "tags": [
+                {
+                    "text": "University of Michigan",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Fall 2022",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Theory",
+                    "color": "green"
+                },
+                {
+                    "text": "Proofs",
+                    "color": "gray"
+                },
+                {
+                    "text": "Math",
+                    "color": "gray"
+                },
+                {
+                    "text": "P vs. NP",
+                    "color": "gray"
+                },
+                {
+                    "text": "Cryptography",
+                    "color": "gray"
+                },
+                {
+                    "text": "Runtime Efficiency",
+                    "color": "gray"
+                }
+            ]
+        },        
+
+        {
+            "category": "Courses",
             "bubble": {
                 "exists": false,
                 "text": "",
@@ -321,277 +369,223 @@
             ]
         },
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
         {
-            "category": "Freelance",
-            "rightBubble": "Test",
+            "category": "Courses",
+            "rightBubble": "",
             "leftBubble": "",
-            "title": "Quiet Hours App",
-            "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Option to put on Vibrate instead of Silent.",
+            "title": "Computer Science Pragmatics",
+            "bodyText": "EECS 201: Learn the ins and outs of properly using a Unix-like system. Project-based work covers shells, version control, build systems, debugging, and scripting.",
             "links": [
                 {
                     "text": "GitHub",
-                    "data": "https://github.com/mayankagarwal09/QuietHours-Android"
+                    "is_modal": true,
+                    "data": {
+                        "title": "Private Repository",
+                        "body": "To protect the integrity of this course, I keep my code private. However, I can share the code with you if you are interested in seeing it. Please contact me!"
+                    }
+                },
+                {
+                    "text": "Class Website",
+                    "data": "https://eecs.umich.edu/courses/eecs201/"
                 }
             ],
             "tags": [
+                {
+                    "text": "University of Michigan",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Fall 2022",
+                    "color": "yellow"
+                },
                 {
                     "text": "Python",
                     "color": "blue"
                 },
                 {
-                    "text": "Django",
-                    "color": "green"
+                    "text": "Bash",
+                    "color": "blue"
                 },
                 {
-                    "text": "BootStrap",
-                    "color": "cyan"
-                },
-                {
-                    "text": "SendGrid",
-                    "color": "yellow"
-                },
-                {
-                    "text": "Heroku",
-                    "color": "red"
-                },
-                {
-                    "text": "Gunicorn",
+                    "text": "Unix",
                     "color": "gray"
                 },
                 {
-                    "text": "VIT",
-                    "color": "white"
+                    "text": "Regex",
+                    "color": "gray"
+                },
+                {
+                    "text": "Editors",
+                    "color": "gray"
+                },
+                {
+                    "text": "Makefile",
+                    "color": "gray"
+                },
+                {
+                    "text": "GDB",
+                    "color": "gray"
+                },
+                {
+                    "text": "Unit-testing",
+                    "color": "gray"
                 }
             ]
         },
+        
+
         {
-            "category": "Freelance",
-            "rightBubble": "Test",
+            "category": "Courses",
+            "rightBubble": "",
             "leftBubble": "",
-            "title": "Secure Chat App",
-            "bodyText": "- An Android App that allows users to send texts in real time.\n - End to End encryption using **RSA** Algorithm.\n - Uses **Firebase** database to store texts.\n - Secured with **Fingerprint** lock.",
+            "title": "Programming and Data Structures",
+            "bodyText": "EECS 280: Computer science fundamentals, with programming in C++. Build an image processing program, a game of Euchre, a web backend, and a machine learning algorithm.",
             "links": [
                 {
                     "text": "GitHub",
-                    "data": "https://github.com/mayankagarwal09/SecureChatApp"
+                    "is_modal": true,
+                    "data": {
+                        "title": "Private Repository",
+                        "body": "To protect the integrity of this course, I keep my code private. However, I can share the code with you if you are interested in seeing it. Please contact me!"
+                    }
+                },
+                {
+                    "text": "Class Website",
+                    "data": "https://eecs280.org"
                 }
             ],
             "tags": [
                 {
-                    "text": "Python",
-                    "color": "blue"
-                },
-                {
-                    "text": "Django",
-                    "color": "green"
-                },
-                {
-                    "text": "BootStrap",
-                    "color": "cyan"
-                },
-                {
-                    "text": "SendGrid",
+                    "text": "University of Michigan",
                     "color": "yellow"
                 },
                 {
-                    "text": "Heroku",
-                    "color": "red"
+                    "text": "Winter 2021",
+                    "color": "yellow"
                 },
                 {
-                    "text": "Gunicorn",
+                    "text": "C++",
+                    "color": "blue"
+                },
+                {
+                    "text": "APIs",
                     "color": "gray"
                 },
                 {
-                    "text": "VIT",
-                    "color": "white"
+                    "text": "Machine Learning",
+                    "color": "green"
+                },
+                {
+                    "text": "Web",
+                    "color": "gray"
+                },
+                {
+                    "text": "OOP",
+                    "color": "gray"
+                }
+            ]
+        },
+
+        {
+            "category": "Courses",
+            "rightBubble": "",
+            "leftBubble": "",
+            "title": "Discrete Mathematics",
+            "bodyText": "EECS 203: Explore the mathematical foundations of computer science. Topics covered include: propositional and predicate logic, proof methods, set theory, functions, sequences and summations, introduction to algorithms, mathematical induction, counting, permutations and combinations, and introduction to graph theory.",
+            "links": [
+                {
+                    "text": "Class Website",
+                    "data": "https://ece.engin.umich.edu/academics/course-information/course-descriptions/eecs-203/"
+                }
+            ],
+            "tags": [
+                {
+                    "text": "University of Michigan",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Fall 2021",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Theory",
+                    "color": "green"
+                },
+                {
+                    "text": "Proofs",
+                    "color": "gray"
+                },
+                {
+                    "text": "Math",
+                    "color": "gray"
+                },
+                {
+                    "text": "Graphs",
+                    "color": "gray"
+                },
+                {
+                    "text": "Algorithms",
+                    "color": "gray"
+                },
+                {
+                    "text": "Induction",
+                    "color": "gray"
+                }
+            ]
+        },
+        
+
+
+        {
+            "category": "Courses",
+            "rightBubble": "",
+            "leftBubble": "",
+            "title": "Other UM Courses",
+            "bodyText": "I have taken many other non-CS courses at the University of Michigan, such as calculus I & II, statistics, upper-level writing, biology, music theory, history, archaeology, language, and more! Feel free to ask me about them.", 
+            "links": [],
+            "tags": [
+                {
+                    "text": "University of Michigan",
+                    "color": "yellow"
                 }
             ]
         },
         {
             "category": "Certificates",
-            "rightBubble": "Test",
+            "rightBubble": "",
             "leftBubble": "",
-            "title": "MVVM Sample App",
-            "bodyText": "- An Android App that loads data from mock API and show in both **LinearLayout** and **GridLayout RecyclerView**.\n - Offline support using **Room** DB and **NetworkBoundResource**.\n - Uses the **MVVM** architecture.",
+            "title": "Scripting with Python and SQL for Data Engineering",
+            "bodyText": "Mini-course that covered data extraction from different sources and mapping, script design for connecting and querying a SQL database, and application of scraping techniques to read and extract data from a website.",
             "links": [
                 {
-                    "text": "GitHub",
-                    "data": "https://github.com/mayankagarwal09/mvvm-sample-app"
+                    "text": "Certificate",
+                    "data": "https://coursera.org/share/0069088aedb0058c174552ef7992bc6d"
                 }
             ],
             "tags": [
+                {
+                    "text": "Duke University",
+                    "color": "blue"
+                },
+                {
+                    "text": "Coursera",
+                    "color": "white"
+                },
                 {
                     "text": "Python",
                     "color": "blue"
                 },
                 {
-                    "text": "Django",
-                    "color": "green"
-                },
-                {
-                    "text": "BootStrap",
-                    "color": "cyan"
-                },
-                {
-                    "text": "SendGrid",
-                    "color": "yellow"
-                },
-                {
-                    "text": "Heroku",
-                    "color": "red"
-                },
-                {
-                    "text": "Gunicorn",
-                    "color": "gray"
-                },
-                {
-                    "text": "VIT",
-                    "color": "white"
-                }
-            ]
-        },
-        {
-            "category": "Courses",
-            "rightBubble": "Test",
-            "leftBubble": "",
-            "title": "Feed List App",
-            "bodyText": "- An Android App that loads list of feeds from a **paginated** API and shows in a RecyclerView.\n - Uses the **MVVM** architecture.\n - Uses **Paging 3** library along with other Architecture Components.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "data": "https://github.com/mayankagarwal09/Paginated-App-Feeds-List"
-                }
-            ],
-            "tags": [
-                {
-                    "text": "Python",
+                    "text": "SQL",
                     "color": "blue"
                 },
                 {
-                    "text": "Django",
-                    "color": "green"
-                },
-                {
-                    "text": "BootStrap",
-                    "color": "cyan"
-                },
-                {
-                    "text": "SendGrid",
-                    "color": "yellow"
-                },
-                {
-                    "text": "Heroku",
-                    "color": "red"
-                },
-                {
-                    "text": "Gunicorn",
+                    "text": "Web-scraping",
                     "color": "gray"
                 },
                 {
-                    "text": "VIT",
-                    "color": "white"
-                }
-            ]
-        },
-        {
-            "category": "Courses",
-            "rightBubble": "Test",
-            "leftBubble": "",
-            "title": "Task Tracker",
-            "bodyText": "- A simple Task Tracker web app made with **Angular 12**.\n - Uses **mock JSON server** to get, add, delete or update tasks.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "data": "https://github.com/mayankagarwal09/task-tracker-app"
-                }
-            ],
-            "tags": [
-                {
-                    "text": "Python",
-                    "color": "blue"
-                },
-                {
-                    "text": "Django",
-                    "color": "green"
-                },
-                {
-                    "text": "BootStrap",
-                    "color": "cyan"
-                },
-                {
-                    "text": "SendGrid",
-                    "color": "yellow"
-                },
-                {
-                    "text": "Heroku",
-                    "color": "red"
-                },
-                {
-                    "text": "Gunicorn",
+                    "text": "Data management",
                     "color": "gray"
-                },
-                {
-                    "text": "VIT",
-                    "color": "white"
-                }
-            ]
-        },
-        {
-            "category": "Courses",
-            "rightBubble": "Test",
-            "leftBubble": "",
-            "title": "Image Encryption/Decryption",
-            "bodyText": "- A Web App for Image Encryption and Decryption made in **Django**.\n - Uses **SDES** algorithm for encryption/decryption.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "data": "https://github.com/mayankagarwal09/img-encrypt-sdes"
-                }
-            ],
-            "tags": [
-                {
-                    "text": "Python",
-                    "color": "blue"
-                },
-                {
-                    "text": "Django",
-                    "color": "green"
-                },
-                {
-                    "text": "BootStrap",
-                    "color": "cyan"
-                },
-                {
-                    "text": "SendGrid",
-                    "color": "yellow"
-                },
-                {
-                    "text": "Heroku",
-                    "color": "red"
-                },
-                {
-                    "text": "Gunicorn",
-                    "color": "gray"
-                },
-                {
-                    "text": "VIT",
-                    "color": "white"
                 }
             ]
         }
