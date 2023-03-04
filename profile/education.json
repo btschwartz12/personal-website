@@ -7,98 +7,336 @@
     "education" : [
         {
             "category": "Courses",
-            "rightBubble": "Test",
-            "leftBubble": "",
-            "title": "Dev Portfolio",
-            "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
+            "bubble": {
+                "exists": true,
+                "text": "Currently Enrolled",
+                "text_color": "black",
+                "background_color": "#FFCB05"
+            },
+            "title": "Web Systems",
+            "bodyText": "EECS 485: Holistic course of modern web systems and technologies, covering front end and back end. Building an Instagram clone and a Google search engine clone.",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/dev-portfolio"
+                    "is_modal": true,
+                    "data": {
+                        "title": "Private Repository",
+                        "body": "To protect the integrity of this course, I keep my code private. However, I can share the code with you if you are interested in seeing it. Please contact me!"
+                    }
                 },
                 {
-                    "text": "Live",
-                    "href": "https://mayankagarwal.me"
+                    "text": "Class Website",
+                    "data": "https://eecs485.org"
                 }
             ],
             "tags": [
+                {
+                    "text": "University of Michigan",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Winter 2023",
+                    "color": "yellow"
+                },
                 {
                     "text": "Python",
                     "color": "blue"
                 },
                 {
-                    "text": "Django",
-                    "color": "green"
-                },
-                {
-                    "text": "BootStrap",
-                    "color": "cyan"
-                },
-                {
-                    "text": "SendGrid",
-                    "color": "yellow"
-                },
-                {
-                    "text": "Heroku",
-                    "color": "red"
-                },
-                {
-                    "text": "Gunicorn",
+                    "text": "HTML",
                     "color": "gray"
                 },
                 {
-                    "text": "VIT",
+                    "text": "JavaScript",
+                    "color": "blue"
+                },
+                {
+                    "text": "React",
+                    "color": "cyan"
+                },
+                {
+                    "text": "CSS",
+                    "color": "gray"
+                },
+                {
+                    "text": "SQL",
+                    "color": "blue"
+                },
+                {
+                    "text": "AWS",
                     "color": "white"
                 }
             ]
         },
         {
             "category": "Courses",
-            "rightBubble": "Test",
-            "leftBubble": "",
-            "title": "Caaring -  Cab Share App",
-            "bodyText": "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a new cab or request to join an existing cab.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **heroku** using **gunicorn**.",
+            "bubble": {
+                "exists": true,
+                "text": "Currently Enrolled",
+                "text_color": "black",
+                "background_color": "#FFCB05"
+            },
+            "title": "Programming Paradigms",
+            "bodyText": "EECS 390: Survey of programming language features and paradigms, with a focus on how to effectively use them. Creating a lexical parser and metacircular evaluator for Scheme, (a functional language) as a uC semantic analyzer and code generator.",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Caaring"
+                    "is_modal": true,
+                    "data": {
+                        "title": "Private Repository",
+                        "body": "To protect the integrity of this course, I keep my code private. However, I can share the code with you if you are interested in seeing it. Please contact me!"
+                    }
                 },
                 {
-                    "text": "Live",
-                    "href": "http://caaring.herokuapp.com"
+                    "text": "Class Website",
+                    "data": "https://eecs390.org"
                 }
             ],
             "tags": [
+                {
+                    "text": "University of Michigan",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Winter 2023",
+                    "color": "yellow"
+                },
                 {
                     "text": "Python",
                     "color": "blue"
                 },
                 {
-                    "text": "Django",
-                    "color": "green"
-                },
-                {
-                    "text": "BootStrap",
-                    "color": "cyan"
-                },
-                {
-                    "text": "SendGrid",
-                    "color": "yellow"
-                },
-                {
-                    "text": "Heroku",
-                    "color": "red"
-                },
-                {
-                    "text": "Gunicorn",
+                    "text": "Functional Programming",
                     "color": "gray"
                 },
                 {
-                    "text": "VIT",
-                    "color": "white"
+                    "text": "Scheme",
+                    "color": "blue"
+                },
+                {
+                    "text": "uC",
+                    "color": "blue"
                 }
             ]
         },
+        {
+            "category": "Courses",
+            "bubble": {
+                "exists": true,
+                "text": "Currently a TA",
+                "text_color": "white",
+                "background_color": "#054c00"
+            },
+            "title": "Data Structures and Algorithms",
+            "bodyText": "EECS 281: Use of data structures and algorithms to optimally solve complex problems. Project-based work spans all major data structures, search optimization, priority queue implementation, hash maps, and shortest-path solvers.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "is_modal": true,
+                    "data": {
+                        "title": "Private Repository",
+                        "body": "To protect the integrity of this course, I keep my code private. However, I can share the code with you if you are interested in seeing it. Please contact me!"
+                    }
+                },
+                {
+                    "text": "Class Website",
+                    "data": "https://eecs281staff.github.io/eecs281.org/"
+                }
+            ],
+            "tags": [
+                {
+                    "text": "University of Michigan",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Winter 2022",
+                    "color": "yellow"
+                },
+                {
+                    "text": "C++",
+                    "color": "blue"
+                },
+                {
+                    "text": "Standard Template Library",
+                    "color": "gray"
+                },
+                {
+                    "text": "Memory Management",
+                    "color": "gray"
+                },
+                {
+                    "text": "Runtime Efficiency",
+                    "color": "gray"
+                }
+            ]
+        },
+        {
+            "category": "Courses",
+            "bubble": {
+                "exists": true,
+                "text": "Favorite Course!",
+                "text_color": "black",
+                "background_color": "#d001c2"
+            },
+            "title": "Computer Security",
+            "bodyText": "EECS 388: Explore the principles and practices of computer security as applied to software, host systems, and networks, covering the foundations of building, using, and managing secure systems. Project-based work includes standard cryptographic functions and protocols, threats and defenses for real-world systems, web and network security, application security, incident response, and computer forensics.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "is_modal": true,
+                    "data": {
+                        "title": "Private Repository",
+                        "body": "To protect the integrity of this course, I keep my code private. However, I can share the code with you if you are interested in seeing it. Please contact me!"
+                    }
+                },
+                {
+                    "text": "Class Website",
+                    "data": "https://eecs388.org"
+                }
+            ],
+            "tags": [
+                {
+                    "text": "University of Michigan",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Fall 2022",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Python",
+                    "color": "blue"
+                },
+                {
+                    "text": "C",
+                    "color": "blue"
+                },
+                {
+                    "text": "x86",
+                    "color": "white"
+                },
+                {
+                    "text": "GDB",
+                    "color": "white"
+                },
+                {
+                    "text": "Wireshark",
+                    "color": "gray"
+                },
+                {
+                    "text": "Docker",
+                    "color": "gray"
+                },
+                {
+                    "text": "Sockets",
+                    "color": "gray"
+                },
+                {
+                    "text": "XSS",
+                    "color": "red"
+                },
+                {
+                    "text": "SQL-Injections",
+                    "color": "red"
+                },
+                {
+                    "text": "CSRF",
+                    "color": "red"
+                },
+                {
+                    "text": "Cryptography",
+                    "color": "green"
+                },
+                {
+                    "text": "ROP-chain",
+                    "color": "gray"
+                },
+                {
+                    "text": "Autopsy",
+                    "color": "gray"
+                },
+                {
+                    "text": "Buffer Overflow",
+                    "color": "gray"
+                }
+            ]
+        },
+        {
+            "category": "Courses",
+            "bubble": {
+                "exists": false,
+                "text": "",
+                "text_color": "black",
+                "background_color": "#FFCB05"
+            },
+            "title": "Computer Organization",
+            "bodyText": "EECS 370: Examine how a low-level language is executed by the hardware, and how to put together basic hardware building blocks to form the functional units of a computer. Project-based work involves creating an assembler, linker and simulator for LC2K (an assembly language), as well as a cache simulator.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "is_modal": true,
+                    "data": {
+                        "title": "Private Repository",
+                        "body": "To protect the integrity of this course, I keep my code private. However, I can share the code with you if you are interested in seeing it. Please contact me!"
+                    }
+                },
+                {
+                    "text": "Class Website",
+                    "data": "https://eecs370.github.io"
+                }
+            ],
+            "tags": [
+                {
+                    "text": "University of Michigan",
+                    "color": "yellow"
+                },
+                {
+                    "text": "Winter 2022",
+                    "color": "yellow"
+                },
+                {
+                    "text": "C",
+                    "color": "blue"
+                },
+                {
+                    "text": "Memory Management",
+                    "color": "gray"
+                },
+                {
+                    "text": "Assembly",
+                    "color": "red"
+                },
+                {
+                    "text": "ARMv8",
+                    "color": "blue"
+                },
+                {
+                    "text": "LC2K",
+                    "color": "blue"
+                },
+                {
+                    "text": "Compilers",
+                    "color": "gray"
+                }
+            ]
+        },
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         {
             "category": "Freelance",
             "rightBubble": "Test",
@@ -108,7 +346,7 @@
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/QuietHours-Android"
+                    "data": "https://github.com/mayankagarwal09/QuietHours-Android"
                 }
             ],
             "tags": [
@@ -151,7 +389,7 @@
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/SecureChatApp"
+                    "data": "https://github.com/mayankagarwal09/SecureChatApp"
                 }
             ],
             "tags": [
@@ -194,7 +432,7 @@
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/mvvm-sample-app"
+                    "data": "https://github.com/mayankagarwal09/mvvm-sample-app"
                 }
             ],
             "tags": [
@@ -237,7 +475,7 @@
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Paginated-App-Feeds-List"
+                    "data": "https://github.com/mayankagarwal09/Paginated-App-Feeds-List"
                 }
             ],
             "tags": [
@@ -280,7 +518,7 @@
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/task-tracker-app"
+                    "data": "https://github.com/mayankagarwal09/task-tracker-app"
                 }
             ],
             "tags": [
@@ -323,7 +561,7 @@
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/img-encrypt-sdes"
+                    "data": "https://github.com/mayankagarwal09/img-encrypt-sdes"
                 }
             ],
             "tags": [
