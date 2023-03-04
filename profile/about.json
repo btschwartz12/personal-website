@@ -20,32 +20,16 @@
                     "title": "Golf"
                 },
                 {
-                    "icon": "images/about/icons/dogs.png",
-                    "title": "Dogs"
-                },
-                {
-                    "icon": "images/about/icons/food.png",
-                    "title": "Food"
-                },
-                {
                     "icon": "images/about/icons/cleveland.png",
                     "title": "Cleveland Sports"
                 },
                 {
-                    "icon": "images/about/icons/traveling.png",
-                    "title": "Traveling"
-                },
-                {
                     "icon": "images/about/icons/tv.png",
-                    "title": "TV"
+                    "title": ""
                 },
                 {
                     "icon": "images/about/icons/personal-projects.png",
                     "title": "Personal Projects"
-                },
-                {
-                    "icon": "images/about/icons/leetcode.png",
-                    "title": "Leetcode"
                 },
                 {
                     "icon": "images/about/icons/chatgpt.png",
@@ -71,12 +55,8 @@
                     "title": "JavaScript"
                 },
                 {
-                    "icon": "images/about/icons/c.svg",
-                    "title": "C"
-                },
-                {
                     "icon": "images/about/icons/c-plus-plus.svg",
-                    "title": "C++"
+                    "title": "C / C++"
                 },
                 {
                     "icon": "images/about/icons/c-sharp.svg",
@@ -87,12 +67,8 @@
                     "title": "Swift"
                 },
                 {
-                    "icon": "images/about/icons/html.png",
-                    "title": "HTML"
-                },
-                {
-                    "icon": "images/about/icons/css.png",
-                    "title": "CSS"
+                    "icon": "images/about/icons/html_css.svg",
+                    "title": "CSS / HTML"
                 },
                 {
                     "icon": "images/about/icons/sql.png",
@@ -168,18 +144,6 @@
                 {
                     "icon": "images/about/icons/mysql.png",
                     "title": "MySQL"
-                },
-                {
-                    "icon": "images/about/icons/zoom.svg",
-                    "title": "Zoom"
-                },
-                {
-                    "icon": "images/about/icons/trello.svg",
-                    "title": "Trello"
-                },
-                {
-                    "icon": "images/about/icons/slack.svg",
-                    "title": "Slack"
                 }
             ]
         },
@@ -191,7 +155,7 @@
                     "title": "MacOS"
                 },
                 {
-                    "icon": "images/about/icons/linux.svg",
+                    "icon": "images/about/icons/linux.png",
                     "title": "Linux"
                 },
                 {
@@ -210,7 +174,6 @@
                     "icon": "images/about/icons/ios.svg",
                     "title": "iOS"
                 },
-                
                 {
                     "icon": "images/about/icons/fusion.png",
                     "title": "Fusion"
