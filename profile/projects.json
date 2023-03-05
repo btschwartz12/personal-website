@@ -192,7 +192,7 @@
             "is_featured": true,
             "category": "School",
             "image" : "images/projects/280-p5.png",
-            "title": "AI-driven Piazza Attributer",
+            "title": "AI-driven Piazza Classifier",
             "bodyText": "Identify the subject of student questions using natural language processing and machine learning techniques. The implementation, in C++, involved using recursion, binary trees, templates, comparators, and the map data structure.",
             "links": [
                 {
@@ -218,7 +218,7 @@
             ]
         },
         {
-            "is_featured": true,
+            "is_featured": false,
             "category": "School",
             "title": "Assembler, Linker & Simulator",
             "bodyText": "Convert LC2K assembly into machine code, and simulate its execution by implementing all functionality of its instrution set architecture. Implement a linker that can take multiple assembly files and manage their symbol and relocation tables during assembly. Also created a 15-bit multiplier in LC2K assembly.",
@@ -402,7 +402,7 @@
                 "background_color": "#d001c2"
             },
             "title": "Digital Forensics",
-            "bodyText": "Conduct various attacks a ficticious persona, by inspeting their virtual hard drive and recovering deleted files, and conducting various attacks (length extension, XSS, CSRF, SQL injection, DNS poisining, buffer overflow, ROP-chaining, password-cracking) to find details about the persona.",
+            "bodyText": "Investigate a ficticious suspect of a crime by inspeting their virtual hard drive, virtual machine, and internet footprint. This included recovering deleted files and conducting various attacks (length extension, XSS, CSRF, SQL injection, DNS poisining, buffer overflow, ROP-chaining, password-cracking) to find details about the persona.",
             "links": [
                 {
                     "text": "GitHub",
@@ -480,7 +480,7 @@
             ]
         },
         {
-            "is_featured": true,
+            "is_featured": false,
             "category": "School",
             "title": "Scheme Lexer & Parser",
             "bodyText": "Create a custom lexer and parser for the Scheme programming language in Scheme itself. A lot of experience with recursion and functional programming.",
@@ -535,7 +535,7 @@
             "is_featured": true,
             "category": "Personal",
             "title": "Minesweeper",
-            "image": "images/projects/minesweeper.png",
+            "image": "images/projects/minesweeper.gif",
             "bodyText": "A Minesweeper game that I built in Java using the Swing library. It has a custom GUI, and a custom Minesweeper board generator that generates boards of any size and difficulty.",
             "links": [
                 {
@@ -550,9 +550,184 @@
                 { "text": "Game Development", "color": "gray" }
             ]
         },
+        {
+            "is_featured": true,
+            "category": "Personal",
+            "title": "Personal Website",
+            "image": "images/projects/personal-website.png",
+            "bodyText": "The website you are looking at right now! This website was built using React, and is hosted on Hostinger. I drew some inspiration from other portfolios I've seen, and baked in my own components and design. I'd love to hear what you think!",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "is_modal": true,
+                    "data": {
+                        "title": "Private Repository",
+                        "body": "I prefer to keep my code for this private, but I am happy to share it with anyone interested! Please contact me!"
+                    }
+                }
+            ],
+            "tags": [
+                { "text": "React", "color": "blue" },
+                { "text": "HTML", "color": "blue" },
+                { "text": "CSS", "color": "blue" },
+                { "text": "JavaScript", "color": "blue" },
+                { "text": "UX", "color": "gray" },
+                { "text": "UI", "color": "gray" },
+                { "text": "Hostinger", "color": "gray" },
+                { "text": "GitHub Workflows", "color": "gray" }
+            ]
+        },
+        {
+            "is_featured": false,
+            "category": "Personal",
+            "title": "Positive Pupil Popup",
+            "bodyText": "Google Chrome Extension that can detect when Canvas user finishes an online assignment, then presents a popup with a quick game and a positive message. It is designed to help students feel more positive about their work, and to help them take a break from long assignments.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "data": "https://github.com/btschwartz12/eecs497_brewing_java"
+                }
+            ],
+            "tags": [
+                { "text": "JavaScript", "color": "blue" },
+                { "text": "Google Chrome Extension", "color": "gray" },
+                { "text": "Canvas", "color": "gray" },
+                { "text": "APIs", "color": "gray" },
+                { "text": "Web Development", "color": "gray" }
+            ]
+        },
+        {
+            "is_featured": false,
+            "category": "Personal",
+            "title": "Blissdle",
+            "image": "images/projects/wordle.png",
+            "bodyText": "My attempt at a solver for the popular game [wordle](https://www.nytimes.com/games/wordle/index.html). It uses hash maps and hash sets to filter out the possible words after guesses, and can help aid the user if they are stuck. This was originally a command-line tool, but eventaully I tried to incorporate it into an iOS app as well as a web app, but I never got around to finishing it.",
+            "links": [
+                {
+                    "text": "CLT GitHub",
+                    "data": "https://github.com/btschwartz12/Blissdle-CLT"
+                },
+                {
+                    "text": "iOS GitHub",
+                    "data": "https://github.com/btschwartz12/Blissdle-iOS"
+                },
+                {
+                    "text": "Web GitHub",
+                    "data": "https://github.com/btschwartz12/Blissdle-Web"
+                }
+            ],
+            "tags": [
+                { "text": "C++", "color": "blue" },
+                { "text": "iOS", "color": "red" },
+                { "text": "Swift", "color": "blue" },
+                { "text": "Web Development", "color": "gray" },
+                { "text": "HTML", "color": "gray" },
+                { "text": "CSS", "color": "gray" },
+                { "text": "JavaScript", "color": "gray" },
+                { "text": "Command-line Tool", "color": "gray" },
+                { "text": "Game Development", "color": "gray" }
+            ]
+        },
+        {
+            "is_featured": false,
+            "category": "Personal",
+            "title": "Bliss Wheel",
+            "image": "images/projects/bliss-wheel.gif",
+            "bodyText": "Helps you make a decision by spinning a wheel with your options. It was originally a command-line tool, but I eventually incorporated it into a macOS app.",
+            "links": [
+                {
+                    "text": "macOS GitHub",
+                    "data": "https://github.com/btschwartz12/BlissWheel-macOS"
+                },
+                {
+                    "text": "CLT GitHub",
+                    "data": "https://github.com/btschwartz12/ConsoleWheel"
+                }
 
+            ],
+            "tags": [
+                { "text": "C++", "color": "blue" },
+                { "text": "macOS", "color": "gray" },
+                { "text": "Swift", "color": "blue" },
+                { "text": "Swift UI", "color": "gray" },
+                { "text": "Command-line Tool", "color": "gray" }
+            ]
+        },
+        {
+            "is_featured": false,
+            "category": "Personal",
+            "title": "Let's Eat",
+            "image": "images/projects/lets-eat.png",
+            "bodyText": "Restaurant reservation app that allows users to explore a list of restaurants categorized by cuisine or view a map showing all restaurants in a particular area. zThe user can also view the details of a restaurant, including a menu, reviews, and a map showing the location of the restaurant. The user can also make a reservation for a restaurant. The app also allows users to view their reservations and cancel them.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "data": "https://github.com/btschwartz12/LetsEat"
+                }
+            ],
+            "tags": [
+                { "text": "Swift", "color": "blue" },
+                { "text": "iOS", "color": "red" },
+                { "text": "Xcode", "color": "gray" },
+                { "text": "Storyboard UI", "color": "gray" },
+                { "text": "Swift UI", "color": "gray" },
+                { "text": "APIs", "color": "gray" },
+                { "text": "Model-View-Controller", "color": "gray" }
+            ]
+        },
+        {
+            "is_featured": true,
+            "category": "Personal",
+            "title": "PriceCalc",
+            "image": "images/projects/price-calc.png",
+            "bodyText": "A simple tool that can calculate what each person owes for large food orders. This allows the extra delivery and tax fees to be fairly distributed among the people who ordered the food. This was initially made with a C++ command-line tool, but I later made it into a functional iOS and macOS app and released to some of my friends.",
+            "links": [
+                {
+                    "text": "CLT GitHub",
+                    "data": "https://github.com/btschwartz12/PriceCalc-CLT"
+                },
+                {
+                    "text": "iOS GitHub",
+                    "data": "https://github.com/btschwartz12/PriceCalc-iOS"
+                },
+                {
+                    "text": "Web GitHub",
+                    "data": "https://github.com/btschwartz12/Blissdle-macOS"
+                }
+            ],
+            "tags": [
+                { "text": "C++", "color": "blue" },
+                { "text": "iOS", "color": "red" },
+                { "text": "Swift", "color": "blue" },
+                { "text": "macOS", "color": "red" },
+                { "text": "Xcode", "color": "gray" },
+                { "text": "Storyboard UI", "color": "gray" },
+                { "text": "Swift UI", "color": "gray" },
+                { "text": "JavaScript", "color": "gray" }
+            ]
+        },
+        {
+            "is_featured": false,
+            "category": "Personal",
+            "title": "HeffleBot",
+            "bodyText": "iOS application that can give you the optimal golf course to call when the weather is bad and you don't know which courses will be open. This is very much unfinished, but I plan to add location sorting and more functionality in the future.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "data": "https://github.com/btschwartz12/HeffleBot"
+                }
+            ],
+            "tags": [
+                { "text": "Swift", "color": "blue" },
+                { "text": "iOS", "color": "red" },
+                { "text": "Xcode", "color": "gray" },
+                { "text": "Storyboard UI", "color": "gray" },
+                { "text": "Swift UI", "color": "gray" },
+                { "text": "Model-View-Controller", "color": "gray" }
+            ]
+        },
 
-
+        
         {}
 
 
