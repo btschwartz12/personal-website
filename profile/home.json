@@ -7,10 +7,9 @@
 
     "greetings": "Hi, I'm Ben",
     "animated_text": [
-        "I build things for the Web",
-        "I contribute to engineering systems",
-        "I love to code",
-        "I want to learn it all"
+        "I build things for the web",
+        "I work with engineering systems",
+        "I love to code"
     ],
     "about": "Junior at the University of Michigan studying Computer Science. Software Developer Intern at Hyland Software. Check out my dogs, then the stuff below!",
     "img_url": "images/home/picture.png",
