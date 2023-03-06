@@ -6,6 +6,7 @@
     
     "projects" : [
         {
+            "priority": 2,
             "is_featured": false,
             "category": "School",
             "title": "3D Maze Solver",
@@ -30,6 +31,7 @@
             ]
         },
         {
+            "priority": 2,
             "is_featured": false,
             "category": "School",
             "title": "Custom Priority Queues",
@@ -55,6 +57,7 @@
             ]
         },
         {
+            "priority": 2,
             "is_featured": false,
             "category": "School",
             "title": "Custom SQL",
@@ -80,6 +83,7 @@
             ]
         },
         {
+            "priority": 1,
             "is_featured": false,
             "category": "School",
             "title": "Traveling Salesman Solver",
@@ -106,6 +110,7 @@
             ]
         },
         {
+            "priority": 1,
             "is_featured": true,
             "category": "School",
             "image" : "images/projects/280-p2.gif",
@@ -133,9 +138,9 @@
             ]
         },
         {
+            "priority": 2,
             "is_featured": false,
             "category": "School",
-            "image" : "images/projects/280-p3.png",
             "title": "Euchre",
             "bodyText": "Build a command-line tool to play Euchre, utilizing C++ Object Oriented Programming (OOP) concepts, including abstract data types, derived classes, inheritance, and polymorphism. The program supports both real opponents and automated opponents, and uses virtual functions to allow for flexible and dynamic behavior. ",
             "links": [
@@ -160,6 +165,7 @@
             ]
         },
         {
+            "priority": 1,
             "is_featured": true,
             "category": "School",
             "image" : "images/projects/280-p4.png",
@@ -189,6 +195,7 @@
             ]
         },
         {
+            "priority": 1,
             "is_featured": true,
             "category": "School",
             "image" : "images/projects/280-p5.png",
@@ -218,6 +225,7 @@
             ]
         },
         {
+            "priority": 3,
             "is_featured": false,
             "category": "School",
             "title": "Assembler, Linker & Simulator",
@@ -244,6 +252,7 @@
             ]
         },
         {
+            "priority": 3,
             "is_featured": false,
             "category": "School",
             "title": "Pipelined Simulator",
@@ -270,6 +279,7 @@
             ]
         },
         {
+            "priority": 3,
             "is_featured": false,
             "category": "School",
             "title": "Cache Simulator",
@@ -296,6 +306,7 @@
             ]
         },
         {
+            "priority": 3,
             "is_featured": false,
             "category": "School",
             "title": "Cryptographic Attacks",
@@ -320,6 +331,7 @@
             ]
         },
         {
+            "priority": 3,
             "is_featured": false,
             "category": "School",
             "title": "Web-based Attacks",
@@ -344,6 +356,7 @@
             ]
         },
         {
+            "priority": 3,
             "is_featured": false,
             "category": "School",
             "title": "Network Attacks",
@@ -367,6 +380,7 @@
             ]
         },
         {
+            "priority": 3,
             "is_featured": false,
             "category": "School",
             "title": "Program Attacks",
@@ -393,6 +407,7 @@
             ]
         },
         {
+            "priority": 1,
             "is_featured": true,
             "category": "School",
             "bubble": {
@@ -427,6 +442,7 @@
             ]
         },
         {
+            "priority": 1,
             "is_featured": true,
             "category": "School",
             "title": "Instagram Clone",
@@ -455,6 +471,7 @@
             ]
         },
         {
+            "priority": 3,
             "is_featured": false,
             "category": "School",
             "title": "Page Rank",
@@ -480,6 +497,7 @@
             ]
         },
         {
+            "priority": 3,
             "is_featured": false,
             "category": "School",
             "title": "Scheme Lexer & Parser",
@@ -505,9 +523,8 @@
                 { "text": "Command-line Tool", "color": "gray" }
             ]
         },
-
-
         {
+            "priority": 1,
             "is_featured": true,
             "category": "Personal",
             "title": "WingmanGPT",
@@ -530,8 +547,8 @@
                 { "text": "Command-line Tool", "color": "gray" }
             ]
         },
-
         {
+            "priority": 1,
             "is_featured": true,
             "category": "Personal",
             "title": "Minesweeper",
@@ -551,6 +568,7 @@
             ]
         },
         {
+            "priority": 1,
             "is_featured": true,
             "category": "Personal",
             "title": "Personal Website",
@@ -578,6 +596,7 @@
             ]
         },
         {
+            "priority": 1,
             "is_featured": false,
             "category": "Personal",
             "title": "Positive Pupil Popup",
@@ -597,6 +616,7 @@
             ]
         },
         {
+            "priority": 2,
             "is_featured": false,
             "category": "Personal",
             "title": "Blissdle",
@@ -629,6 +649,7 @@
             ]
         },
         {
+            "priority": 3,
             "is_featured": false,
             "category": "Personal",
             "title": "Bliss Wheel",
@@ -654,7 +675,8 @@
             ]
         },
         {
-            "is_featured": false,
+            "priority": 1,
+            "is_featured": true,
             "category": "Personal",
             "title": "Let's Eat",
             "image": "images/projects/lets-eat.png",
@@ -676,6 +698,7 @@
             ]
         },
         {
+            "priority": 1,
             "is_featured": true,
             "category": "Personal",
             "title": "PriceCalc",
@@ -707,6 +730,7 @@
             ]
         },
         {
+            "priority": 3,
             "is_featured": false,
             "category": "Personal",
             "title": "HeffleBot",
@@ -727,6 +751,7 @@
             ]
         },
         {
+            "priority": 2,
             "is_featured": false,
             "category": "Personal",
             "title": "TruSource Report Builder",
@@ -748,6 +773,7 @@
             ]
         },
         {
+            "priority": 2,
             "is_featured": false,
             "category": "Personal",
             "title": "Baseball Simulator",
