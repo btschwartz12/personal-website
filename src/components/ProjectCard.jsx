@@ -3,7 +3,7 @@ import {
     Button, Card, Badge, Col, Modal
 } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import ReactMarkdown from 'react-markdown';
+import TextBody from './TextBody';
 
 const styles = {
 
@@ -94,7 +94,8 @@ const MyModal = (props) => {
                 <Modal.Title>{data.title}</Modal.Title>
             </Modal.Header>
             <Modal.Body style={styles.modalBody}>
-                {data.body}
+                <TextBody text={data.body} />
+                {/* {data.body} */}
             </Modal.Body>
             <Modal.Footer style={styles.modalFooter}>
             <Button
@@ -112,7 +113,6 @@ const MyModal = (props) => {
 
 
 const ProjectCard = (props) => {
-    const parseBodyText = (text) => <ReactMarkdown children={text} />;
 
     const [show, setShow] = useState(false); // for modal
 
@@ -148,7 +148,7 @@ const ProjectCard = (props) => {
                 <Card.Body>
                     <Card.Title style={styles.cardTitleStyle}>{project.title}</Card.Title>
                     <Card.Text style={styles.cardTextStyle}>
-                        {parseBodyText(project.bodyText)}
+                        <TextBody text={project.bodyText} />
                     </Card.Text>
                 </Card.Body>
 

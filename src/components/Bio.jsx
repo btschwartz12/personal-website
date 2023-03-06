@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 import { Col, Row } from 'react-bootstrap';
 import Slide from 'react-reveal/Slide';
 import TextBody from './TextBody';
@@ -36,27 +35,21 @@ const styles = {
 
 
 const Bio = ({ data, matches }) => {
-    const parseIntro = (text) => (
-        <ReactMarkdown
-        children={text}
-        />
-    );
 
     if (matches) {
         return (
-                <Row>
-                    <Col style={styles.introTextContainer}>
-                        <Slide left>
-                            <TextBody text={data?.about} />
-                        </Slide>
-                    </Col>
-                    <Col style={styles.introImageContainer}>
-                        <Slide right>
-                            <img style={styles.image} src={data?.imageSource} alt="profile" />
-                        </Slide>
-                    </Col>
-                    
-                </Row>
+            <Row>
+                <Col style={styles.introTextContainer}>
+                    <Slide left>
+                        <TextBody text={data?.about} />
+                    </Slide>
+                </Col>
+                <Col style={styles.introImageContainer}>
+                    <Slide right>
+                        <img style={styles.image} src={data?.imageSource} alt="profile" />
+                    </Slide>
+                </Col>
+            </Row>
         );
     }
     else {
@@ -67,7 +60,7 @@ const Bio = ({ data, matches }) => {
             </Slide>
             <Slide right>
                 <div style={styles.introTextContainer}>
-                    {parseIntro(data.about)}
+                    <TextBody text={data?.about} />
                 </div>
             </Slide>
             </>
