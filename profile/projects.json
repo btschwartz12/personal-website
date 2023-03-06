@@ -726,20 +726,43 @@
                 { "text": "Model-View-Controller", "color": "gray" }
             ]
         },
-
-        
-        {}
-
-
-
-
-
-
-
-
-
-
-
-        
+        {
+            "is_featured": false,
+            "category": "Personal",
+            "title": "TruSource Report Builder",
+            "bodyText": "Made for my senior project for high school, this is a macOS application that analyzes several databases using the Google Sheets API, and then generates a report based on the data.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "data": "https://github.com/btschwartz12/TruSourceReportBuilder-macOS"
+                }
+            ],
+            "tags": [
+                { "text": "Swift", "color": "blue" },
+                { "text": "macOS", "color": "red" },
+                { "text": "Xcode", "color": "gray" },
+                { "text": "Storyboard UI", "color": "gray" },
+                { "text": "Swift UI", "color": "gray" },
+                { "text": "Google Sheets API", "color": "gray" },
+                { "text": "Model-View-Controller", "color": "gray" }
+            ]
+        },
+        {
+            "is_featured": false,
+            "category": "Personal",
+            "title": "Baseball Simulator",
+            "bodyText": "Scrapes data from Baseball Reference and simulates a baseball season using the data. This was one of my first experiences with object-oriented programming in C++ and was a fun project to work on.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "data": "https://github.com/btschwartz12/BaseballSimulator"
+                }
+            ],
+            "tags": [
+                { "text": "C++", "color": "blue" },
+                { "text": "Web Scraping", "color": "gray" },
+                { "text": "Command-line Tool", "color": "gray" }
+            ]
+        }
     ]
 }
