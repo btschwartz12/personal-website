@@ -2,6 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Col, Row } from 'react-bootstrap';
 import Slide from 'react-reveal/Slide';
+import TextBody from './TextBody';
 
 
 
@@ -40,15 +41,13 @@ const Bio = ({ data, matches }) => {
         children={text}
         />
     );
-    
-
 
     if (matches) {
         return (
                 <Row>
                     <Col style={styles.introTextContainer}>
                         <Slide left>
-                            {parseIntro(data.about)}
+                            <TextBody text={data?.about} />
                         </Slide>
                     </Col>
                     <Col style={styles.introImageContainer}>

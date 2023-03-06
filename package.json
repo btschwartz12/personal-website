@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "animejs": "^3.2.1",
     "bootstrap": "^5.2.3",
     "eslint-config-react-app": "^7.0.1",
     "prop-types": "^15.8.1",

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import endpoints from "../app/endpoints";
 import MyHelmet from "../components/MyHelmet";
 import Slide from "react-reveal/Slide";
+import TextBody from "../components/TextBody";
 
 
 
@@ -66,13 +67,15 @@ const Home = () => {
                         strings: data.animated_text,
                         autoStart: true,
                         loop: true,
-                        deleteSpeed: 10,
+                        deleteSpeed: 5,
+                        pauseFor: 3000,
                       }}
+                      
                     />
                   </h1>
                   </Slide>
                   <Slide left>
-                  <p className="mb-1x" style={{ overflowWrap: 'break-word' }}>{data.about}</p>
+                  <TextBody text={data.about} />
                   </Slide>
                   <Slide right>
                   <div >

@@ -5,7 +5,7 @@
     },
     
     "COMMENT": "TRY QUASIQUOTES",
-    "about": "Hello! My name is **Ben**, a software engineer intern based in Solon, OH. I enjoy building things for the internet, mobile applications, distributed systems, and everything in between. My goal is to contribute to high-performing systems that are reliable, scalable, and able to evolve over time.\n\n\nI am currently an undergrad at the **University of Michigan** studying Computer Science, planning to graduate in the April 2024. I have also been working as a software engineer intern with **Aclara Technologies** since the summer of 2022.\n\n\nI am planning to intern as a software developer with **Hyland Software** in the summer of 2023, and am always looking for new opportunities to learn and grow as a software developer!",
+    "about": "Hello! My name is **Ben**, a software engineer intern based in Solon, OH. I enjoy building things for the internet, mobile applications, distributed systems, and everything in between. My goal is to contribute to high-performing systems that are reliable, scalable, and able to evolve over time.\n\n\nI am currently an undergrad at the **University of Michigan** studying Computer Science, planning to graduate in April 2024. I have also been working as a software engineer intern with **Aclara Technologies** since the summer of 2022.\n\n\nI am planning to intern as a software developer with **Hyland Software** in the summer of 2023, and am always looking for new opportunities to learn and grow as a software developer!",
     "imageSource": "images/about/profile.png",
     "icons": [
         {
@@ -25,7 +25,11 @@
                 },
                 {
                     "icon": "images/about/icons/tv.png",
-                    "title": ""
+                    "title": "This"
+                },
+                {
+                    "icon": "images/about/icons/dog.png",
+                    "title": "Dogs"
                 },
                 {
                     "icon": "images/about/icons/personal-projects.png",
@@ -35,7 +39,6 @@
                     "icon": "images/about/icons/chatgpt.png",
                     "title": "ChatGPT"
                 }
-                
             ]
         },
         
@@ -138,6 +141,10 @@
                     "title": "Visual Studio Code"
                 },
                 {
+                    "icon": "images/about/icons/xcode.png",
+                    "title": "Xcode"
+                },
+                {
                     "icon": "images/about/icons/gdb.svg",
                     "title": "GDB"
                 },
@@ -167,10 +174,6 @@
                     "title": "Android Studio"
                 },
                 {
-                    "icon": "images/about/icons/xcode.png",
-                    "title": "Xcode"
-                },
-                {
                     "icon": "images/about/icons/ios.svg",
                     "title": "iOS"
                 },
@@ -181,10 +184,6 @@
                 {
                     "icon": "images/about/icons/ado.svg",
                     "title": "Azure"
-                },
-                {
-                    "icon": "images/about/icons/unity.svg",
-                    "title": "Unity"
                 },
                 {
                     "icon": "images/about/icons/aws.svg",
