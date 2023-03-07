@@ -84,10 +84,6 @@
                 {
                     "icon": "images/about/icons/assembly.png",
                     "title": "Assembly"
-                },
-                {
-                    "icon": "images/about/icons/rust.png",
-                    "title": "Rust"
                 }
         
             ]

@@ -689,7 +689,7 @@
             "title": "Let's Eat",
             "image": "images/projects/lets-eat/lets-eat.png",
             "video": "images/projects/lets-eat/lets-eat.mp4",
-            "bodyText": "Restaurant reservation app that allows users to explore a list of restaurants categorized by cuisine or view a map showing all restaurants in a particular area. zThe user can also view the details of a restaurant, including a menu, reviews, and a map showing the location of the restaurant. The user can also make a reservation for a restaurant. The app also allows users to view their reservations and cancel them.",
+            "bodyText": "Restaurant reservation app that allows users to explore a list of restaurants categorized by cuisine or view a map showing all restaurants in a particular area. The user can also view the details of a restaurant, including a menu, reviews, and a map showing the location of the restaurant. The user can also make a reservation for a restaurant. The app also allows users to view their reservations and cancel them.",
             "links": [
                 {
                     "text": "GitHub",
