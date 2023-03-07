@@ -78,7 +78,7 @@ const Home = () => {
                   <TextBody text={data.about} />
                   </Slide>
                   <Slide right>
-                  <div >
+                  <div style={{marginBottom: 20}}>
                     {data.buttons.map((item) => (
                       <Link to={item.route} key={item.name} target={item.type === "link" ? "_blank" : "_self"} className="text_2">
                         <div id={item.id} className="ac_btn btn ">
@@ -89,7 +89,6 @@ const Home = () => {
                         </div>
                       </Link>
                     ))}
-                    {/* <ContactPopup triggerButton={contactButton}/> */}
                   </div>
                   </Slide>
                 </div>

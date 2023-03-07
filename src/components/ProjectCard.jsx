@@ -81,7 +81,7 @@ const badgeColors = {
 
 
 const MyModal = (props) => {
-    const { show, handleClose, data } = props;
+    const { show, handleClose, data, isGif } = props;
     return (
         <Modal 
             show={show} 
@@ -90,22 +90,45 @@ const MyModal = (props) => {
             keyboard={false}
             centered
         >
-            <Modal.Header style={styles.modalHeader} closeButton>
-                <Modal.Title>{data.title}</Modal.Title>
-            </Modal.Header>
-            <Modal.Body style={styles.modalBody}>
-                <TextBody text={data.body} />
-                {/* {data.body} */}
-            </Modal.Body>
-            <Modal.Footer style={styles.modalFooter}>
-            <Button
-                    variant="secondary"
-                    style={styles.closeButton}
-                    onClick={handleClose}
-                >
-                    Close
-                </Button>
-            </Modal.Footer>
+            {isGif ? (
+                <>
+                <Modal.Header style={styles.modalHeader} closeButton>
+                    <Modal.Title>{data.title}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body style={styles.modalBody}>
+                    <img src={data.gif} alt={data.title} style={{width: '100%'}} />
+                </Modal.Body>
+                <Modal.Footer style={styles.modalFooter}>
+                <Button
+                        variant="secondary"
+                        style={styles.closeButton}
+                        onClick={handleClose}
+                    >
+                        Close
+                    </Button>
+                </Modal.Footer>
+                </>
+            ) : (
+                <>
+                <Modal.Header style={styles.modalHeader} closeButton>
+                    <Modal.Title>{data.title}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body style={styles.modalBody}>
+                    <TextBody text={data.body} />
+                    {/* {data.body} */}
+                </Modal.Body>
+                <Modal.Footer style={styles.modalFooter}>
+                <Button
+                        variant="secondary"
+                        style={styles.closeButton}
+                        onClick={handleClose}
+                    >
+                        Close
+                    </Button>
+                </Modal.Footer>
+                </>
+            )}
+            
         </Modal>
     );
 };
@@ -115,6 +138,7 @@ const MyModal = (props) => {
 const ProjectCard = (props) => {
 
     const [show, setShow] = useState(false); // for modal
+    const [gifShow, setGifShow] = useState(false); // for gif modal
 
     const onLinkClick = (linkData) => {
         if (!linkData.is_modal) {
@@ -168,10 +192,29 @@ const ProjectCard = (props) => {
                                 show={show}
                                 handleClose={() => setShow(false)}
                                 data={link.data}
+                                isGif={false}
                             />
                         )}
                         </>
                     ))}
+                    {(project?.gif && project.gif !== "") && (
+                        <>
+                        <Button
+                            key={project.gif}
+                            style={styles.buttonStyle}
+                            variant={'outline-light'}
+                            onClick={() => setGifShow(true)}
+                        >
+                            GIF
+                        </Button>
+                        <MyModal
+                            show={gifShow}
+                            handleClose={() => setGifShow(false)}
+                            data={{gif: project.gif, title: project.title}}
+                            isGif={true}
+                        />
+                        </>
+                    )}
                 </Card.Body>
                 {project.tags && (
                     <Card.Footer style={styles.cardFooter}>
