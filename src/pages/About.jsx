@@ -28,8 +28,6 @@ const styles = {
     position: 'relative',
     width: '100%',
     transition: 'all .5s ease-in',
-    overflowY: 'scroll',
-    overflowX: 'hidden'
   },
   
 };

@@ -53,6 +53,9 @@ const NavBar = () => {
 
   const handleLinkClick = () => {
     setExpanded(false);
+    if (window.location.pathname === '/') {
+      window.location.reload();
+    }
   };
 
   return (
