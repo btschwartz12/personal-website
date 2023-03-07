@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import {
-    Button, Card, Badge, Col, Modal
+    Button, Card, Badge, Col
 } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import TextBody from './TextBody';
+import CardModal from './CardModal';
 
 const styles = {
 
@@ -51,19 +52,7 @@ const styles = {
     cardFooter: {
         backgroundColor: '#181818',
     },
-    modalHeader: {
-        backgroundColor: '#00274C',
-        color: 'white',
-    },
-    modalBody: {
-        backgroundColor: '#00274C',
-        color: 'white',
-    },
-    modalFooter: {
-        backgroundColor: '#00274C',
-        color: 'white',
-        borderTop: 'none',
-    },
+    
 };
 
 const badgeColors = {
@@ -75,64 +64,6 @@ const badgeColors = {
     red: 'danger',
     gray: 'secondary'
 };
-
-
-
-
-
-const MyModal = (props) => {
-    const { show, handleClose, data, isGif } = props;
-    return (
-        <Modal 
-            show={show} 
-            onHide={handleClose}
-            backdrop="static"
-            keyboard={false}
-            centered
-        >
-            {isGif ? (
-                <>
-                <Modal.Header style={styles.modalHeader} closeButton>
-                    <Modal.Title>{data.title}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body style={styles.modalBody}>
-                    <img src={data.gif} alt={data.title} style={{width: '100%'}} />
-                </Modal.Body>
-                <Modal.Footer style={styles.modalFooter}>
-                <Button
-                        variant="secondary"
-                        style={styles.closeButton}
-                        onClick={handleClose}
-                    >
-                        Close
-                    </Button>
-                </Modal.Footer>
-                </>
-            ) : (
-                <>
-                <Modal.Header style={styles.modalHeader} closeButton>
-                    <Modal.Title>{data.title}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body style={styles.modalBody}>
-                    <TextBody text={data.body} />
-                    {/* {data.body} */}
-                </Modal.Body>
-                <Modal.Footer style={styles.modalFooter}>
-                <Button
-                        variant="secondary"
-                        style={styles.closeButton}
-                        onClick={handleClose}
-                    >
-                        Close
-                    </Button>
-                </Modal.Footer>
-                </>
-            )}
-            
-        </Modal>
-    );
-};
-
 
 
 const ProjectCard = (props) => {
@@ -159,16 +90,33 @@ const ProjectCard = (props) => {
                 }}
                 text='light'
             >
-                {project.bubble?.exists && (
-                    <div style={{
-                            ...styles.bubbleStyle,
-                            color: project.bubble.text_color,
-                            backgroundColor: project.bubble.background_color,
-                            }}>
+                {project.bubble?.exists ? (
+                    <div
+                        style={{
+                        ...styles.bubbleStyle,
+                        color: project.bubble.text_color,
+                        backgroundColor: project.bubble.background_color,
+                        }}
+                    >
                         {project.bubble.text}
                     </div>
-                )}
-                <Card.Img variant="top" src={project?.image} />
+                    ) : project?.gif ? (
+                    <div
+                        style={{
+                        ...styles.bubbleStyle,
+                        borderRadius: '0 0 0 10px',
+                        color: '#FFFFFF',
+                        backgroundColor: 'maroon',
+                        }}
+                    >
+                        Click Me!
+                    </div>
+                ) : null}
+                <Card.Img 
+                    variant="top" 
+                    src={project?.image} 
+                    onClick={() => setGifShow(true)}
+                />
                 <Card.Body>
                     <Card.Title style={styles.cardTitleStyle}>{project.title}</Card.Title>
                     <Card.Text style={styles.cardTextStyle}>
@@ -188,7 +136,7 @@ const ProjectCard = (props) => {
                             {link.text}
                         </Button>
                         {link.is_modal && (
-                            <MyModal
+                            <CardModal
                                 show={show}
                                 handleClose={() => setShow(false)}
                                 data={link.data}
@@ -207,7 +155,7 @@ const ProjectCard = (props) => {
                         >
                             GIF
                         </Button>
-                        <MyModal
+                        <CardModal
                             show={gifShow}
                             handleClose={() => setGifShow(false)}
                             data={{gif: project.gif, title: project.title}}
