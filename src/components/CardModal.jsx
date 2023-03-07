@@ -21,7 +21,7 @@ const styles = {
 };
 
 const CardModal = (props) => {
-    const { show, handleClose, data, isGif } = props;
+    const { show, handleClose, data, isAnimated } = props;
     return (
         <Modal 
             show={show} 
@@ -30,13 +30,20 @@ const CardModal = (props) => {
             keyboard={false}
             centered
         >
-            {isGif ? (
+            {isAnimated ? (
                 <>
                 <Modal.Header style={styles.modalHeader} closeButton>
                     <Modal.Title>{data.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body style={styles.modalBody}>
-                    <img src={data.gif} alt={data.title} style={{width: '100%'}} />
+                    {data.video ? (
+                        <video controls autoPlay style={{width: '100%', height: 'auto'}}>
+                            <source src={data.video} type="video/mp4" />
+                        </video>
+                    ) : (
+                        <img src={data.gif} alt={data.title} style={{width: '100%'}} />
+                    )}
+                    
                 </Modal.Body>
                 <Modal.Footer style={styles.modalFooter}>
                 <Button

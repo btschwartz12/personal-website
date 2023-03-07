@@ -140,7 +140,7 @@ const ProjectCard = (props) => {
                                 show={show}
                                 handleClose={() => setShow(false)}
                                 data={link.data}
-                                isGif={false}
+                                isAnimated={false}
                             />
                         )}
                         </>
@@ -158,8 +158,8 @@ const ProjectCard = (props) => {
                         <CardModal
                             show={gifShow}
                             handleClose={() => setGifShow(false)}
-                            data={{gif: project.gif, title: project.title}}
-                            isGif={true}
+                            data={{gif: project.gif, video: project.video, title: project.title}}
+                            isAnimated={true}
                         />
                         </>
                     )}

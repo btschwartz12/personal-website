@@ -450,6 +450,7 @@
             "title": "Instagram Clone",
             "image": "images/projects/485-insta/485-insta.png",
             "gif": "images/projects/485-insta/485-insta.gif",
+            "video": "images/projects/485-insta/485-insta.mp4",
             "bodyText": "Built an instagram clone where users could login, post, and engage with other users' posts with client-side dynamic pages using React, Python and HTML.",
             "links": [
                 {
