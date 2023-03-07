@@ -69,7 +69,7 @@ const badgeColors = {
 const ProjectCard = (props) => {
 
     const [show, setShow] = useState(false); // for modal
-    const [gifShow, setGifShow] = useState(false); // for gif modal
+    const [videoShow, setVideoShow] = useState(false); // for video modal
 
     const onLinkClick = (linkData) => {
         if (!linkData.is_modal) {
@@ -100,7 +100,7 @@ const ProjectCard = (props) => {
                     >
                         {project.bubble.text}
                     </div>
-                    ) : project?.gif ? (
+                    ) : project?.video ? (
                     <div
                         style={{
                         ...styles.bubbleStyle,
@@ -115,7 +115,7 @@ const ProjectCard = (props) => {
                 <Card.Img 
                     variant="top" 
                     src={project?.image} 
-                    onClick={() => setGifShow(true)}
+                    onClick={() => setVideoShow(true)}
                 />
                 <Card.Body>
                     <Card.Title style={styles.cardTitleStyle}>{project.title}</Card.Title>
@@ -145,20 +145,20 @@ const ProjectCard = (props) => {
                         )}
                         </>
                     ))}
-                    {(project?.gif && project.gif !== "") && (
+                    {(project?.video && project.video !== "") && (
                         <>
                         <Button
-                            key={project.gif}
+                            key={project.video}
                             style={styles.buttonStyle}
                             variant={'outline-light'}
-                            onClick={() => setGifShow(true)}
+                            onClick={() => setVideoShow(true)}
                         >
-                            GIF
+                            Video
                         </Button>
                         <CardModal
-                            show={gifShow}
-                            handleClose={() => setGifShow(false)}
-                            data={{gif: project.gif, video: project.video, title: project.title}}
+                            show={videoShow}
+                            handleClose={() => setVideoShow(false)}
+                            data={{video: project.video, title: project.title}}
                             isAnimated={true}
                         />
                         </>

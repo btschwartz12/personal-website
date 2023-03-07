@@ -114,7 +114,7 @@
             "is_featured": true,
             "category": "School",
             "image" : "images/projects/280-p2/280-p2.png",
-            "gif": "images/projects/280-p2/280-p2.gif",
+            "video": "images/projects/280-p2/280-p2.gif",
             "title": "Image Resizer",
             "bodyText": "Command-line tool that performs a seam-carving algorithm, which removes seams in an image that pass through the least important pixels, resulting in content-aware image resizing.",
             "links": [
@@ -170,7 +170,7 @@
             "is_featured": true,
             "category": "School",
             "image" : "images/projects/280-p4/280-p4.png",
-            "gif": "images/projects/280-p4/280-p4.gif",
+            "video": "images/projects/280-p4/280-p4.mp4",
             "title": "Web-Based Office Hours Queue",
             "bodyText": "Build a web server for an office hours queue, with a focus on container ADTs, dynamic memory, constructors and destructors, and the list data structure. The program utilized custom-implemented Linked Lists and Iterators to manage the queue.",
             "links": [
@@ -449,7 +449,6 @@
             "category": "School",
             "title": "Instagram Clone",
             "image": "images/projects/485-insta/485-insta.png",
-            "gif": "images/projects/485-insta/485-insta.gif",
             "video": "images/projects/485-insta/485-insta.mp4",
             "bodyText": "Built an instagram clone where users could login, post, and engage with other users' posts with client-side dynamic pages using React, Python and HTML.",
             "links": [
@@ -533,7 +532,7 @@
             "category": "Personal",
             "title": "WingmanGPT",
             "image": "images/projects/wingmangpt/wingmangpt.png",
-            "gif": "",
+            "video": "",
             "bodyText": "A command-line tool that utilizes OpenAI's ChatGPT model to generate conversation starters for you, and can even send a text message to a specified number. It's like your own personal wingman!",
             "links": [
                 {
@@ -558,7 +557,7 @@
             "category": "Personal",
             "title": "Minesweeper",
             "image": "images/projects/minesweeper/minesweeper.png",
-            "gif": "images/projects/minesweeper/minesweeper.gif",
+            "video": "images/projects/minesweeper/minesweeper.gif",
             "bodyText": "A Minesweeper game that I built in Java using the Swing library. It has a custom GUI, and a custom Minesweeper board generator that generates boards of any size and difficulty.",
             "links": [
                 {
@@ -579,7 +578,7 @@
             "category": "Personal",
             "title": "Personal Website",
             "image": "images/projects/personal-website/personal-website.png",
-            "gif": "images/projects/personal-website/personal-website.gif",
+            "video": "images/projects/personal-website/personal-website.mp4",
             "bodyText": "The website you are looking at right now! This website was built using React, and is hosted on Hostinger. I drew some inspiration from other portfolios I've seen, and baked in my own components and design. I'd love to hear what you think!",
             "links": [
                 {
@@ -628,7 +627,7 @@
             "category": "Personal",
             "title": "Blissdle",
             "image": "images/projects/blissdle/blissdle.png",
-            "gif": "images/projects/blissdle/blissdle.gif",
+            "video": "images/projects/blissdle/blissdle.mp4",
             "bodyText": "My attempt at a solver for the popular game [wordle](https://www.nytimes.com/games/wordle/index.html). It uses hash maps and hash sets to filter out the possible words after guesses, and can help aid the user if they are stuck. This was originally a command-line tool, but eventaully I tried to incorporate it into an iOS app as well as a web app, but I never got around to finishing it.",
             "links": [
                 {
@@ -662,7 +661,7 @@
             "category": "Personal",
             "title": "Bliss Wheel",
             "image": "images/projects/bliss-wheel/bliss-wheel.png",
-            "gif": "images/projects/bliss-wheel/bliss-wheel.gif",
+            "video": "images/projects/bliss-wheel/bliss-wheel.mp4",
             "bodyText": "Helps you make a decision by spinning a wheel with your options. It was originally a command-line tool, but I eventually incorporated it into a macOS app.",
             "links": [
                 {
@@ -689,7 +688,7 @@
             "category": "Personal",
             "title": "Let's Eat",
             "image": "images/projects/lets-eat/lets-eat.png",
-            "gif": "images/projects/lets-eat/lets-eat.gif",
+            "video": "images/projects/lets-eat/lets-eat.mp4",
             "bodyText": "Restaurant reservation app that allows users to explore a list of restaurants categorized by cuisine or view a map showing all restaurants in a particular area. zThe user can also view the details of a restaurant, including a menu, reviews, and a map showing the location of the restaurant. The user can also make a reservation for a restaurant. The app also allows users to view their reservations and cancel them.",
             "links": [
                 {
@@ -713,7 +712,7 @@
             "category": "Personal",
             "title": "PriceCalc",
             "image": "images/projects/price-calc/price-calc.png",
-            "gif": "",
+            "video": "",
             "bodyText": "A simple tool that can calculate what each person owes for large food orders. This allows the extra delivery and tax fees to be fairly distributed among the people who ordered the food. This was initially made with a C++ command-line tool, but I later made it into a functional iOS and macOS app and released to some of my friends.",
             "links": [
                 {

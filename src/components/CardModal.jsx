@@ -36,14 +36,15 @@ const CardModal = (props) => {
                     <Modal.Title>{data.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body style={styles.modalBody}>
-                    {data.video ? (
+                {data.video ? (
+                    data.video.endsWith(".mp4") ? (
                         <video controls autoPlay style={{width: '100%', height: 'auto'}}>
                             <source src={data.video} type="video/mp4" />
                         </video>
                     ) : (
-                        <img src={data.gif} alt={data.title} style={{width: '100%'}} />
-                    )}
-                    
+                        <img src={data.video} alt={data.title} style={{width: '100%'}} />
+                    )
+                ) : null}
                 </Modal.Body>
                 <Modal.Footer style={styles.modalFooter}>
                 <Button
