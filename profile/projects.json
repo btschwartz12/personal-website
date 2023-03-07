@@ -170,7 +170,7 @@
             "is_featured": true,
             "category": "School",
             "image" : "images/projects/280-p4/280-p4.png",
-            "gif": "",
+            "gif": "images/projects/280-p4/280-p4.gif",
             "title": "Web-Based Office Hours Queue",
             "bodyText": "Build a web server for an office hours queue, with a focus on container ADTs, dynamic memory, constructors and destructors, and the list data structure. The program utilized custom-implemented Linked Lists and Iterators to manage the queue.",
             "links": [
@@ -578,7 +578,7 @@
             "category": "Personal",
             "title": "Personal Website",
             "image": "images/projects/personal-website/personal-website.png",
-            "gif": "",
+            "gif": "images/projects/personal-website/personal-website.gif",
             "bodyText": "The website you are looking at right now! This website was built using React, and is hosted on Hostinger. I drew some inspiration from other portfolios I've seen, and baked in my own components and design. I'd love to hear what you think!",
             "links": [
                 {
