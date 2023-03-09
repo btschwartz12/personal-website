@@ -6,7 +6,7 @@
     
     "projects" : [
         {
-            "priority": 2,
+            "priority": 3,
             "is_featured": false,
             "category": "School",
             "title": "3D Maze Solver",
@@ -31,7 +31,7 @@
             ]
         },
         {
-            "priority": 2,
+            "priority": 3,
             "is_featured": false,
             "category": "School",
             "title": "Custom Priority Queues",
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "priority": 2,
+            "priority": 3,
             "is_featured": false,
             "category": "School",
             "title": "Custom SQL",
@@ -83,7 +83,7 @@
             ]
         },
         {
-            "priority": 1,
+            "priority": 2,
             "is_featured": false,
             "category": "School",
             "title": "Traveling Salesman Solver",
@@ -110,7 +110,7 @@
             ]
         },
         {
-            "priority": 1,
+            "priority": 2,
             "is_featured": true,
             "category": "School",
             "image" : "images/projects/280-p2/280-p2.png",
@@ -139,7 +139,7 @@
             ]
         },
         {
-            "priority": 2,
+            "priority": 3,
             "is_featured": false,
             "category": "School",
             "title": "Euchre",
@@ -166,7 +166,7 @@
             ]
         },
         {
-            "priority": 1,
+            "priority": 2,
             "is_featured": true,
             "category": "School",
             "image" : "images/projects/280-p4/280-p4.png",
@@ -197,7 +197,7 @@
             ]
         },
         {
-            "priority": 1,
+            "priority": 2,
             "is_featured": true,
             "category": "School",
             "image" : "images/projects/280-p5/280-p5.png",
@@ -227,7 +227,7 @@
             ]
         },
         {
-            "priority": 3,
+            "priority": 4,
             "is_featured": false,
             "category": "School",
             "title": "Assembler, Linker & Simulator",
@@ -254,7 +254,7 @@
             ]
         },
         {
-            "priority": 3,
+            "priority": 4,
             "is_featured": false,
             "category": "School",
             "title": "Pipelined Simulator",
@@ -281,7 +281,7 @@
             ]
         },
         {
-            "priority": 3,
+            "priority": 4,
             "is_featured": false,
             "category": "School",
             "title": "Cache Simulator",
@@ -308,7 +308,7 @@
             ]
         },
         {
-            "priority": 3,
+            "priority": 4,
             "is_featured": false,
             "category": "School",
             "title": "Cryptographic Attacks",
@@ -333,7 +333,7 @@
             ]
         },
         {
-            "priority": 3,
+            "priority": 4,
             "is_featured": false,
             "category": "School",
             "title": "Web-based Attacks",
@@ -358,7 +358,7 @@
             ]
         },
         {
-            "priority": 3,
+            "priority": 4,
             "is_featured": false,
             "category": "School",
             "title": "Network Attacks",
@@ -382,7 +382,7 @@
             ]
         },
         {
-            "priority": 3,
+            "priority": 4,
             "is_featured": false,
             "category": "School",
             "title": "Program Attacks",
@@ -409,7 +409,7 @@
             ]
         },
         {
-            "priority": 1,
+            "priority": 2,
             "is_featured": true,
             "category": "School",
             "bubble": {
@@ -474,7 +474,7 @@
             ]
         },
         {
-            "priority": 3,
+            "priority": 4,
             "is_featured": false,
             "category": "School",
             "title": "Page Rank",
@@ -500,7 +500,7 @@
             ]
         },
         {
-            "priority": 3,
+            "priority": 4,
             "is_featured": false,
             "category": "School",
             "title": "Scheme Lexer & Parser",
@@ -552,7 +552,7 @@
             ]
         },
         {
-            "priority": 1,
+            "priority": 2,
             "is_featured": true,
             "category": "Personal",
             "title": "Minesweeper",
@@ -573,7 +573,7 @@
             ]
         },
         {
-            "priority": 1,
+            "priority": 2,
             "is_featured": true,
             "category": "Personal",
             "title": "Personal Website",
@@ -602,7 +602,7 @@
             ]
         },
         {
-            "priority": 1,
+            "priority": 2,
             "is_featured": false,
             "category": "Personal",
             "title": "Positive Pupil Popup",
@@ -622,7 +622,7 @@
             ]
         },
         {
-            "priority": 2,
+            "priority": 3,
             "is_featured": false,
             "category": "Personal",
             "title": "Blissdle",
@@ -656,7 +656,7 @@
             ]
         },
         {
-            "priority": 3,
+            "priority": 4,
             "is_featured": false,
             "category": "Personal",
             "title": "Bliss Wheel",
@@ -712,7 +712,7 @@
             "category": "Personal",
             "title": "PriceCalc",
             "image": "images/projects/price-calc/price-calc.png",
-            "video": "",
+            "video": "images/projects/price-calc/price-calc.mp4",
             "bodyText": "A simple tool that can calculate what each person owes for large food orders. This allows the extra delivery and tax fees to be fairly distributed among the people who ordered the food. This was initially made with a C++ command-line tool, but I later made it into a functional iOS and macOS app and released to some of my friends.",
             "links": [
                 {
@@ -740,7 +740,7 @@
             ]
         },
         {
-            "priority": 3,
+            "priority": 4,
             "is_featured": false,
             "category": "Personal",
             "title": "HeffleBot",
@@ -761,7 +761,7 @@
             ]
         },
         {
-            "priority": 2,
+            "priority": 3,
             "is_featured": false,
             "category": "Personal",
             "title": "TruSource Report Builder",
@@ -783,7 +783,7 @@
             ]
         },
         {
-            "priority": 2,
+            "priority": 3,
             "is_featured": false,
             "category": "Personal",
             "title": "Baseball Simulator",
