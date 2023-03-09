@@ -53,6 +53,10 @@ const NavBar = () => {
 
   const handleLinkClick = () => {
     setExpanded(false);
+  };
+
+  const specialHandleLinkClick = () => {
+    setExpanded(false);
     if (window.location.pathname === '/') {
       window.location.reload();
     }
@@ -73,7 +77,7 @@ const NavBar = () => {
       <Container>
         
         <Navbar.Brand>
-          <Link to="/" className="text_2" onClick={handleLinkClick}>
+          <Link to="/" className="text_2" onClick={specialHandleLinkClick}>
           <img
             alt=""
             src={data?.logo?.source}

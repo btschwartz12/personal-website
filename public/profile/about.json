@@ -5,7 +5,7 @@
     },
     
     "COMMENT": "TRY QUASIQUOTES",
-    "about": "Hello! My name is **Ben**, a software engineer intern based in Solon, OH. I enjoy building things for the internet, mobile applications, distributed systems, and everything in between. My goal is to contribute to high-performing systems that are reliable, scalable, and able to evolve over time.\n\n\nI am currently an undergrad at the **University of Michigan** studying Computer Science, planning to graduate in April 2024. I have also been working as a software engineer intern with **Aclara Technologies** since the summer of 2022.\n\n\nI am planning to intern as a software developer with **Hyland Software** in the summer of 2023, and am always looking for new opportunities to learn and grow as a software developer!",
+    "about": "Hello! My name is **Ben**, a software engineer intern based in Solon, OH. I enjoy building things for the internet, mobile applications, distributed systems, and everything in between. My goal is to contribute to high-performing systems that are reliable, scalable, and able to evolve over time.\n\n\nI am currently an undergrad at the **University of Michigan** studying Computer Science, in my second semester as a teaching assistant for a data structures & algorithms course, and planning to graduate in April 2024. I have also been working as a software engineer intern with **Aclara Technologies** since the summer of 2022.\n\n\nI am planning to intern as a software developer with **Hyland Software** in the summer of 2023, and am always looking for new opportunities to learn and grow as a software developer!",
     "imageSource": "images/about/profile.png",
     "icons": [
         {
@@ -18,6 +18,10 @@
                 {
                     "icon": "images/about/icons/golf.png",
                     "title": "Golf"
+                },
+                {
+                    "icon": "images/about/icons/teaching.png",
+                    "title": "Teaching"
                 },
                 {
                     "icon": "images/about/icons/cleveland.png",
