@@ -36,6 +36,7 @@ const CardModal = (props) => {
                     <Modal.Title>{data.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body style={styles.modalBody}>
+                    <TextBody text={"Sorry if this takes a second to load or close!"} />
                 {data.video ? (
                     data.video.endsWith(".mp4") ? (
                         <video controls autoPlay style={{width: '100%', height: 'auto'}}>
