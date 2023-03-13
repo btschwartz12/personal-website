@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
 import { Container, Row } from "react-bootstrap";
 import { Chrono } from "react-chrono";
-import FallbackSpinner from "../components/FallbackSpinner";
-import endpoints from "../app/endpoints";
+import FallbackSpinner from "../components/FallbackSpinner.jsx";
+import endpoints from "../app/endpoints.jsx";
 
-import PageTitle from "../components/PageTitle";
+import PageTitle from "../components/PageTitle.jsx";
 
 // https://github.com/prabhuignoto/react-chrono#theme
 

@@ -1,8 +1,8 @@
 import { useState, useEffect, } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Fade } from 'react-reveal';
-import ProjectCard from './ProjectCard';
-import FallbackSpinner from './FallbackSpinner';
+import ProjectCard from './ProjectCard.jsx';
+import FallbackSpinner from './FallbackSpinner.jsx';
 
 
 

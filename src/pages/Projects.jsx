@@ -1,14 +1,14 @@
 
 import { useState, useEffect } from 'react';
 import endpoints from '../app/endpoints';
-import FallbackSpinner from '../components/FallbackSpinner';
+import FallbackSpinner from '../components/FallbackSpinner.jsx';
 
 
 
 import React from "react";
-import CardView from '../components/CardView';
+import CardView from '../components/CardView.jsx';
 import { HelmetProvider } from 'react-helmet-async';
-import MyHelmet from '../components/MyHelmet';
+import MyHelmet from '../components/MyHelmet.jsx';
 
 
 

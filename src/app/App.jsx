@@ -4,12 +4,12 @@ import {
   BrowserRouter as Router,
   useLocation,
 } from "react-router-dom";
-import withRouter from "../hooks/withRouter";
-import AppRoutes from "./routes";
-import NavBarWithRouter from "../components/NavBar";
-import GlobalStyles from '../styles/GlobalStyles';
+import withRouter from "../hooks/withRouter.jsx";
+import AppRoutes from "./routes.jsx";
+import NavBarWithRouter from "../components/NavBar.jsx";
+import GlobalStyles from '../styles/GlobalStyles.jsx';
 import "../styles/App.css";
-import LoadingScreen from "../components/LoadingScreen";
+import LoadingScreen from "../components/LoadingScreen.jsx";
 import { Fade } from "react-reveal";
 
 function _ScrollToTop(props) {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import endpoints from '../app/endpoints';
-import FallbackSpinner from '../components/FallbackSpinner';
+import endpoints from '../app/endpoints.jsx';
+import FallbackSpinner from '../components/FallbackSpinner.jsx';
 
 
 

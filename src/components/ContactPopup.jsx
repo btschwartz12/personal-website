@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import endpoints from '../app/endpoints';
-import FallbackSpinner from './FallbackSpinner';
+import endpoints from '../app/endpoints.jsx';
+import FallbackSpinner from './FallbackSpinner.jsx';
 
 
 const styles = {

@@ -3,10 +3,10 @@ import "../styles/Home.css";
 import { HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
-import endpoints from "../app/endpoints";
-import MyHelmet from "../components/MyHelmet";
+import endpoints from "../app/endpoints.jsx";
+import MyHelmet from "../components/MyHelmet.jsx";
 import Slide from "react-reveal/Slide";
-import TextBody from "../components/TextBody";
+import TextBody from "../components/TextBody.jsx";
 
 
 

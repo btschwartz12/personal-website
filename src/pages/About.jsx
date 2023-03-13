@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import endpoints from '../app/endpoints';
 import { useMediaQuery } from 'usehooks-ts';
-import Bio from '../components/Bio';
-import AboutIcons from '../components/AboutIcons';
-import FallbackSpinner from '../components/FallbackSpinner';
+import Bio from '../components/Bio.jsx';
+import AboutIcons from '../components/AboutIcons.jsx';
+import FallbackSpinner from '../components/FallbackSpinner.jsx';
 import { Link } from 'react-router-dom';
-import PageTitle from '../components/PageTitle';
+import PageTitle from '../components/PageTitle.jsx';
 
 
 import { HelmetProvider } from 'react-helmet-async';

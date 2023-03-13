@@ -8,7 +8,7 @@ import {
   FaYoutube,
   FaTwitch,
 } from "react-icons/fa";
-import endpoints from "../app/endpoints";
+import endpoints from "../app/endpoints.jsx";
 
 
 // make a map of the social icons

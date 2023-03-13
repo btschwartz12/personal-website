@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Slide from 'react-reveal/Slide';
-import TextBody from './TextBody';
+import TextBody from './TextBody.jsx';
 
 
 
