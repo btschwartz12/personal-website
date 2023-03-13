@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import endpoints from '../app/endpoints';
+import endpoints from '../app/endpoints.jsx';
 import { useMediaQuery } from 'usehooks-ts';
 import Bio from '../components/Bio.jsx';
 import AboutIcons from '../components/AboutIcons.jsx';
@@ -10,7 +10,7 @@ import PageTitle from '../components/PageTitle.jsx';
 
 
 import { HelmetProvider } from 'react-helmet-async';
-import MyHelmet from '../components/MyHelmet';
+import MyHelmet from '../components/MyHelmet.jsx';
 
 
 

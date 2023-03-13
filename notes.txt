@@ -1,0 +1,20 @@
+const path = require('path');
+const webpack = require('webpack');
+
+module.exports = {
+  // Other webpack configuration options...
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.PUBLIC_URL': JSON.stringify(process.env.PUBLIC_URL)
+    })
+  ],
+  devServer: {
+    // Other dev server options...
+    historyApiFallback: true,
+    publicPath: process.env.PUBLIC_URL || '/'
+  },
+  output: {
+    // Other output options...
+    publicPath: process.env.PUBLIC_URL || '/'
+  }
+};

@@ -7,7 +7,7 @@ import FallbackSpinner from './FallbackSpinner.jsx';
 
 
 import React from "react";
-import PageTitle from './PageTitle';
+import PageTitle from './PageTitle.jsx';
 
 
 const styles = {
