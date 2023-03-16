@@ -12,3 +12,5 @@ https://github.com/morellodev/react-awesome-reveal
 
 
 4. Should I put back the public dir so I can debug?
+
+5. Github workflows do we even want them?
