@@ -2,14 +2,15 @@
 set -Eeu pipefail
 set -x
 
-python3 -m venv env
+read -p "Are you currently in a virtual environment? (y/n): " proceed
 
-source env/bin/activate
+if [ "$proceed" = "y" ]; then
+    pip install --upgrade pip setuptools wheel
+    pip install -r requirements.txt
+    pip install -e .
+    pip install gunicorn
 
-
-pip install --upgrade pip setuptools wheel
-pip install -r requirements.txt
-pip install -e .
-pip install gunicorn
-
-npm ci  --force .
+    npm ci --force
+else
+    echo "Please activate your virtual environment and try again."
+fi

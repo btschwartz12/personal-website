@@ -4,7 +4,7 @@ from flask_mysqldb import MySQL
 
 app = flask.Flask(__name__)
 
-app.config.from_object('BlissApp.config')
+app.config.from_object('BlissPortfolio.config')
 
 app.public_folder = 'public'
 app.static_folder = 'static'
@@ -33,6 +33,6 @@ def a():
     return "dog"
 
 
-import BlissApp.api
-import BlissApp.model
-import BlissApp.views
+import BlissPortfolio.api
+import BlissPortfolio.model
+import BlissPortfolio.views

@@ -1,6 +1,6 @@
 from flask import jsonify
 
-import BlissApp
+import BlissPortfolio
 
 class User:
     def __init__(self, id, name, email, password):
@@ -10,7 +10,7 @@ class User:
         self.password = password
 
 def __get_users():
-    cur = BlissApp.mysql.connection.cursor()
+    cur = BlissPortfolio.mysql.connection.cursor()
     cur.execute("SELECT * FROM users")
     rows = cur.fetchall()
     users = [User(id=row[0], name=row[1], email=row[2], password=row[3]) for row in rows]
@@ -19,9 +19,18 @@ def __get_users():
 
 
 
-@BlissApp.app.route('/api/users')
+@BlissPortfolio.app.route('/api/users')
 def get_users():
     users = __get_users()
     print('Yes')
     print(users)
     return jsonify([{'id': user.id, 'name': user.name, 'email': user.email} for user in users])
+
+
+@BlissPortfolio.app.route('/api/piper')
+def piper():
+    users = {
+        "dog": "frog",
+        "cheese": [2, 234, 234]
+    }
+    return jsonify(users)
