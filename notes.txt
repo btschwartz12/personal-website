@@ -9,3 +9,6 @@ https://github.com/morellodev/react-awesome-reveal
 
 
 3. Figure out best way/port to serve flask as Daemon
+
+
+4. Should I put back the public dir so I can debug?
