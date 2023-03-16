@@ -23,7 +23,7 @@ const ScrollToTop = withRouter(_ScrollToTop);
 
 export default function App() {
   const [loading, setLoading] = useState(true);
-
+  console.log(process.env.PUBLIC_URL);
   return (
     <>
       <GlobalStyles />
