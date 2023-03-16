@@ -60,7 +60,7 @@ const LoadingScreen = ({ onFinishLoading }) => {
         >
             <Flip left>
             <div style={styles.logo}>
-                <img src="images/logo.svg" alt="loading dog" />
+                <img src="/public/logo.svg" alt="loading dog" />
             </div>
             </Flip>
         </div>

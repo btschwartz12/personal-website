@@ -1,3 +1,2 @@
-Wrong basename for router, 
-
-have it autimatically delete %PUBLIC_URL%
+Figure out how to have htaccess behavior with flask so can access links directly,
+without having a seperate flask template to render

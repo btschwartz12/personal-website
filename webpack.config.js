@@ -2,43 +2,20 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
-const publicUrl = "http://107.173.251.101"
 
 module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.jsx'),
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'BlissApp', 'static', 'js'),
     filename: 'bundle.js',
   },
   mode: "development",
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: 'public/index.html',
-      filename: 'index.html',
-      PUBLIC_URL: publicUrl
-    }),
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: 'public',
-          to: '.',
-          globOptions: {
-            ignore: ['**/index.html']
-          }
-        }
-      ]
-    }),
-    new webpack.DefinePlugin({
-      'process.env.PUBLIC_URL': '/'
-    })
-  ],
   
   module: {
     rules: [
       
       {
         test: /\.(jsx|js)$/,
-        include: path.resolve(__dirname, 'src'),
         exclude: /node_modules/,
         use: [{
           loader: 'babel-loader',

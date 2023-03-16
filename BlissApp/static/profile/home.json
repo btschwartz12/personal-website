@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "title": "Ben Schwartz",
+        "description": "TODO"
+    },
+    
+
+    "greetings": "Hi, I'm Ben",
+    "animated_text": [
+        "I build things for the web",
+        "I improve engineering systems",
+        "I love to code"
+    ],
+    "about": "Junior and teaching assistant at the University of Michigan studying Computer Science. Software Engineer Intern with Aclara Technologies. Check out my dogs, then the stuff below!",
+    "img_url": "/static/media/home/picture.png",
+
+    "buttons": [
+        {
+            "name": "Me",
+            "route": "/about",
+            "id": "button_p"
+        },
+        {
+            "name": "Projects",
+            "route": "/projects",
+            "id": "button_h"
+        },
+        {
+            "name": "Experience",
+            "route": "/experience",
+            "id": "button_h"
+        },
+        {
+            "name": "Education",
+            "route": "/education",
+            "id": "button_h"
+        },
+        {
+            "name": "Resume",
+            "route": "https://drive.google.com/file/d/1wCPzd7fiAko-PfaizeCkd8ZChVdLK7eA/view?usp=sharing",
+            "type": "link",
+            "id": "button_h"
+        }
+    ]
+}
