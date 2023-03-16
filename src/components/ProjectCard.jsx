@@ -127,6 +127,7 @@ const ProjectCard = (props) => {
                 <Card.Body>
                     {project?.links?.map((link) => (
                         <>
+                        
                         <Button
                             key={link.data}
                             style={styles.buttonStyle}
@@ -137,6 +138,7 @@ const ProjectCard = (props) => {
                         </Button>
                         {link.is_modal && (
                             <CardModal
+                                key={link.data + 'modal'}
                                 show={show}
                                 handleClose={() => setShow(false)}
                                 data={link.data}

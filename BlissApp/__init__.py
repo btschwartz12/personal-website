@@ -11,9 +11,9 @@ app.static_folder = 'static'
 
 mysql = MySQL(app)
 
-# @app.route('/public/<path:filename>')
-# def public_files(filename):
-#     return flask.send_from_directory(app.public_folder, filename)
+@app.route('/public/<path:filename>')
+def public_files(filename):
+    return flask.send_from_directory(app.public_folder, filename)
 
 @app.route('/')
 def index():
