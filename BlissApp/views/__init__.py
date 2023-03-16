@@ -1,3 +1,3 @@
 
 
-from BlissApp.views.index import show_index
+# from BlissApp.views.index import show_index

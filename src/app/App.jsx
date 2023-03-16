@@ -31,8 +31,8 @@ export default function App() {
         <LoadingScreen onFinishLoading={() => setLoading(false)}/>
       ) : (
         
-        // <Router basename={process.env.PUBLIC_URL}>
-        <Router >
+        <Router basename={process.env.PUBLIC_URL}>
+        {/* <Router > */}
           <ScrollToTop>
             <NavBarWithRouter />
             <br />

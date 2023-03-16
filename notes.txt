@@ -1,2 +1,10 @@
 Figure out how to have htaccess behavior with flask so can access links directly,
 without having a seperate flask template to render
+
+
+get react-awesome-reveal instead
+https://github.com/morellodev/react-awesome-reveal
+
+
+
+ensure that other pages work for website, as well as API

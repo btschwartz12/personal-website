@@ -24,10 +24,10 @@ const AnimatedRoutes = withRouter(({ location }) => (
     >
       <Routes location={location}>
         <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} /> 
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/education" element={<Education />} />
+        <Route path={process.env.PUBLIC_URL + '/about'} element={<About />} />
+        <Route path={process.env.PUBLIC_URL + '/projects'} element={<Projects />} /> 
+        <Route path={process.env.PUBLIC_URL + '/experience'} element={<Experience />} />
+        <Route path={process.env.PUBLIC_URL + '/education'} element={<Education />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </CSSTransition>
