@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Flip } from "react-reveal";
+import endpoints from "../app/endpoints";
 
 const styles = {
     container: {
@@ -26,6 +27,18 @@ const styles = {
 
 const LoadingScreen = ({ onFinishLoading }) => {
     const [visible, setVisible] = useState(true);
+
+
+    const [logoUrl, setLogoUrl] = useState(null);
+
+    useEffect(() => {
+        fetch(endpoints.home, {
+            method: 'GET',
+        })
+            .then((res) => res.json())
+            .then((res) => setLogoUrl(res.logo_url))
+            .catch((err) => err);
+    }, []);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -61,7 +74,7 @@ const LoadingScreen = ({ onFinishLoading }) => {
             <Flip left>
             <div style={styles.logo}>
                 {/* <img src="/public/logo.svg" alt="loading dog" /> */}
-                <img src="/public/logo.svg" alt="loading dog" />
+                <img src={logoUrl} alt="loading dog" />
             </div>
             </Flip>
         </div>
