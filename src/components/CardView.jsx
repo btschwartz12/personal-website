@@ -1,6 +1,6 @@
 import { useState, useEffect, } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import { Fade } from 'react-reveal';
+import { Fade } from 'react-awesome-reveal';
 import ProjectCard from './ProjectCard.jsx';
 import FallbackSpinner from './FallbackSpinner.jsx';
 
@@ -121,12 +121,14 @@ const CardView = (props) => {
                 <div className="section-content-container">
                     <Container style={styles.containerStyle}>
                     <Row xs={1} sm={1} md={2} lg={3} className="g-4">
+                        <Fade >
                         {filteredData.slice(0, numberOfItems).map((project) => (
-                        <Fade key={project.title}>
-                            <ProjectCard project={project} 
+                        
+                            <ProjectCard key={project.title} project={project} 
                             />
-                        </Fade>
+                        
                         ))}
+                        </Fade>
                     </Row>
 
                     {!showMore

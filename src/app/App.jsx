@@ -10,7 +10,7 @@ import NavBarWithRouter from "../components/NavBar.jsx";
 import GlobalStyles from '../styles/GlobalStyles.jsx';
 import "../styles/App.css";
 import LoadingScreen from "../components/LoadingScreen.jsx";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();

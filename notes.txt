@@ -1,7 +1,5 @@
 
 
-1. get react-awesome-reveal instead
-https://github.com/morellodev/react-awesome-reveal
 
 
 

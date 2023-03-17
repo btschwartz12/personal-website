@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import Slide from 'react-reveal/Slide';
+import { Slide } from 'react-awesome-reveal';
 import TextBody from './TextBody.jsx';
 
 
@@ -40,12 +40,12 @@ const Bio = ({ data, matches }) => {
         return (
             <Row>
                 <Col style={styles.introTextContainer}>
-                    <Slide left>
+                    <Slide direction="left">
                         <TextBody text={data?.about} />
                     </Slide>
                 </Col>
                 <Col style={styles.introImageContainer}>
-                    <Slide right>
+                    <Slide direction="right">
                         <img style={styles.image} src={data?.imageSource} alt="profile" />
                     </Slide>
                 </Col>
@@ -55,10 +55,10 @@ const Bio = ({ data, matches }) => {
     else {
         return (
             <>
-            <Slide left>
+            <Slide direction="left">
                 <img style={styles.image} src={data?.imageSource} alt="profile" />
             </Slide>
-            <Slide right>
+            <Slide direction="right">
                 <div style={styles.introTextContainer}>
                     <TextBody text={data?.about} />
                 </div>

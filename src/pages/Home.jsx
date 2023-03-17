@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 import endpoints from "../app/endpoints.jsx";
 import MyHelmet from "../components/MyHelmet.jsx";
-import Slide from "react-reveal/Slide";
+import { Slide } from "react-awesome-reveal";
 import TextBody from "../components/TextBody.jsx";
 
 
@@ -56,11 +56,11 @@ const Home = () => {
               <div className="align-self-center ">
                 <div className="intro mx-auto">
                 <h2 className="mb-1x">
-                  <Slide top cascade>
+                  <Slide direction="left" >
                   {data.greetings}
                   </Slide>
                   </h2>
-                  <Slide right>
+                  <Slide direction="right">
                   <h1 className="fluidz-48 mb-1x">
                     <Typewriter
                       options={{
@@ -74,11 +74,12 @@ const Home = () => {
                     />
                   </h1>
                   </Slide>
-                  <Slide left>
+                  <Slide direction="left">
                   <TextBody text={data.about} />
                   </Slide>
-                  <Slide right>
+                  
                   <div style={{marginBottom: 20}}>
+                  <Slide direction="right" cascade duration="400">
                     {data.buttons.map((item) => (
                       <Link to={item.route} key={item.name} target={item.type === "link" ? "_blank" : "_self"} className="text_2">
                         <div id={item.id} className="ac_btn btn ">
@@ -89,8 +90,9 @@ const Home = () => {
                         </div>
                       </Link>
                     ))}
+                    </Slide>
                   </div>
-                  </Slide>
+                  
                 </div>
               </div>
             </div>

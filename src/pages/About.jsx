@@ -7,6 +7,7 @@ import AboutIcons from '../components/AboutIcons.jsx';
 import FallbackSpinner from '../components/FallbackSpinner.jsx';
 import { Link } from 'react-router-dom';
 import PageTitle from '../components/PageTitle.jsx';
+import { Slide } from 'react-awesome-reveal';
 
 
 import { HelmetProvider } from 'react-helmet-async';
@@ -77,6 +78,7 @@ const About = () => {
                   <>
                     {homeData.buttons.map((item) => (
                     item.name !== 'Me' &&
+                    <Slide cascade direction='right' duration='1000'>
                     <Link to={item.route} key={item.name} target={item.type === "link" ? "_blank" : "_self"} className="text_2">
                       <div id={item.id} className="ac_btn btn ">
                         {item.name}
@@ -85,6 +87,7 @@ const About = () => {
                         <div className="ring three"></div>
                       </div>
                     </Link>
+                    </Slide>
                   ))}
                   </>
                 ) : <FallbackSpinner />}

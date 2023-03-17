@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
+import { Fade, Bounce } from 'react-awesome-reveal';
 
 const styles = {
     introTextContainer: {
@@ -47,16 +47,18 @@ const styles = {
 
 const IconsList = ({ items }) => {
     return (
-        <Fade>
+        
         <div style={styles.iconsListContainer}>
+        <Bounce cascade duration='600' triggerOnce="true">
         {items.map((item) => (
             <div key={item.title} style={styles.skillContainer}>
             <img style={styles.skillIcon} src={item.icon} alt={item.title} />
             <p>{item.title}</p>
             </div>
         ))}
+        </Bounce>
         </div>
-        </Fade>
+
     );
 };
 
@@ -68,8 +70,9 @@ const AboutIcons = (props) => {
     return (
         <>
         <div className="section-content-container">
-            <Fade>
+            
             <Container>
+            <Fade>
             {/* {renderSkillsIntro(data.intro)} */}
             {icons?.map((rows) => (
                 <div key={rows.title}>
@@ -78,8 +81,9 @@ const AboutIcons = (props) => {
                 <hr className="t_border my-4 ml-0 text-left"/>
                 </div>
             ))}
-            </Container>
             </Fade>
+            </Container>
+            
         </div>
         </>
     );

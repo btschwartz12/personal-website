@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Flip } from "react-reveal";
+import { JackInTheBox } from "react-awesome-reveal";
 import endpoints from "../app/endpoints";
 
 const styles = {
@@ -71,12 +71,13 @@ const LoadingScreen = ({ onFinishLoading }) => {
             pointerEvents: visible ? "auto" : "none",
         }}
         >
-            <Flip left>
+            
             <div style={styles.logo}>
-                {/* <img src="/public/logo.svg" alt="loading dog" /> */}
+            <JackInTheBox >
                 <img src={logoUrl} alt="loading dog" />
+            </JackInTheBox>
             </div>
-            </Flip>
+            
         </div>
     );
 };

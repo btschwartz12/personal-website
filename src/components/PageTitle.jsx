@@ -1,17 +1,15 @@
 import React from 'react';
 import MovingComponent from 'react-moving-text';
-import { LightSpeed } from 'react-reveal';
-import { Zoom, Bounce } from 'react-reveal';
-import Jump from 'react-reveal/Jump';
-import Jello from 'react-reveal/Jello';
-import RubberBand from 'react-reveal/RubberBand';
+
+import { AttentionSeeker } from 'react-awesome-reveal';
 // import { useMediaQuery } from 'usehooks-ts';
 
-const getRandomComponent = () => {   
-  const components = [Zoom, Bounce, Jump, Jello, RubberBand];
-  const randomIndex = Math.floor(Math.random() * components.length);
-  const component = components[randomIndex] || LightSpeed;
-  return component;
+
+const getRandomEffect = () => {   
+  const effects = ['bounce', 'flash', 'headShake', 'heartBeat', 'jello', 'pulse', 'rubberBand', 'shake', 'shakeX', 'shakeY', 'swing', 'tada', 'wobble'];
+  const randomIndex = Math.floor(Math.random() * effects.length);
+  const effect = effects[randomIndex] || 'bounce';
+  return effect;
 };
 
 
@@ -67,11 +65,11 @@ const PageTitle = ({ title, subtitle, random = true }) => {
     // const bigEnough = useMediaQuery('(min-width: 1000px)');
 
 
-    const RevealComponent = random ? getRandomComponent() : LightSpeed;
+    const randomEffect = random ? getRandomEffect() : 'bounce';
 
     return (
         <>
-        <RevealComponent>
+        <AttentionSeeker effect={randomEffect}>
             <div style={styles.stackedTitle}>
                 <AnimatedWord word={title} style={styles.titleLetterStyle} />
                 {subtitle &&
@@ -79,7 +77,7 @@ const PageTitle = ({ title, subtitle, random = true }) => {
                 }
             </div>
             
-        </RevealComponent>
+        </AttentionSeeker>
         <hr className="t_border my-4 ml-0 text-left"
             style={{color: '#FFCB05', borderWidth: '2px'}}/>
         </>
