@@ -19,7 +19,7 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         script: |
           pwd
-          cd
+          cd ~/web/deployed
           rm -rf website-build
           git clone -b vps git@github.com:btschwartz12/personal-website.git website-build
           cd website-build
@@ -30,6 +30,4 @@ jobs:
           ./bin/install-noconfirm
           ./bin/build
           ./bin/serve
-          cd ..
-          rm -rf website-build
           echo Done
