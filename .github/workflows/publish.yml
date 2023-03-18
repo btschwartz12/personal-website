@@ -19,8 +19,9 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         script: |
           pwd
-
-          git clone -b vps git@github.com:btschwartz12/personal-website.git website-build --force
+          cd
+          rm -rf website-build
+          git clone -b vps git@github.com:btschwartz12/personal-website.git website-build
           cd website-build
           python3 -m venv env
           source env/bin/activate
