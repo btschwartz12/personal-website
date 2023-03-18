@@ -7,7 +7,5 @@ pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 pip install -e .
 pip install gunicorn
-which npm
-which npx
 
 npm ci .
