@@ -17,7 +17,7 @@ ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 MAX_CONTENT_LENGTH = 16 * 1024 * 1024
 
 
-# MYSQL_HOST = 'localhost'
-# MYSQL_USER = 'ben'
-# MYSQL_PASSWORD = 'kagxip-xekmUg-1sixte'
-# MYSQL_DB = 'mydb'
+MYSQL_HOST = 'localhost'
+MYSQL_USER = 'ben'
+MYSQL_PASSWORD = 'kagxip-xekmUg-1sixte'
+MYSQL_DB = 'mydb'

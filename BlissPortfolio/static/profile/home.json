@@ -17,6 +17,7 @@
         "Check out my dogs, then the stuff below!"
     ],
     "img_url": "/static/media/home/picture.png",
+    "logo_url": "/static/media/logo.svg",
 
     "buttons": [
         {

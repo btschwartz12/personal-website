@@ -35,4 +35,3 @@ def a():
 
 import BlissPortfolio.api
 import BlissPortfolio.model
-import BlissPortfolio.views

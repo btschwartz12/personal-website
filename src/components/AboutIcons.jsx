@@ -49,7 +49,7 @@ const IconsList = ({ items }) => {
     return (
         
         <div style={styles.iconsListContainer}>
-        <Bounce cascade duration='600' triggerOnce="true">
+        <Bounce cascade duration='400' triggerOnce="true">
         {items.map((item) => (
             <div key={item.title} style={styles.skillContainer}>
             <img style={styles.skillIcon} src={item.icon} alt={item.title} />

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { JackInTheBox } from "react-awesome-reveal";
-import endpoints from "../app/endpoints";
+import endpoints from "../app/endpoints.jsx";
 
 const styles = {
     container: {
