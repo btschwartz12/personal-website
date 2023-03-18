@@ -26,4 +26,6 @@ jobs:
           ./bin/install-noconfirm
           ./bin/build
           ./bin/serve
+          cd ..
+          rm -rf website-build
           echo Done
