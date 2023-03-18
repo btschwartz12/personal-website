@@ -6,7 +6,7 @@ import ContactPopup from './ContactPopup.jsx';
 import { Link } from 'react-router-dom';
 import { socialIconsImages } from './SocialIcons.jsx';
 
-import { Slide, JackInTheBox } from 'react-awesome-reveal';
+import { Slide, JackInTheBox, Zoom } from 'react-awesome-reveal';
 
 const styles = {
   navbarCustom: {
@@ -112,7 +112,7 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav >
-            <Slide cascade duration='400'>
+            <Zoom cascade duration='200'>
             {data?.sections?.map((section, index) => (
               <Link to={section.href} key={section.title} target={section.type === "link" ? "_blank" : "_self"} className="text_2" onClick={handleLinkClick}>
                 <div id={index} style={styles.navLink} >
@@ -120,7 +120,7 @@ const NavBar = () => {
                 </div>
               </Link>
             ))}
-            </Slide>
+            </Zoom>
           </Nav>
         </Navbar.Collapse>
       </Container>

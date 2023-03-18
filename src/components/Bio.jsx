@@ -40,12 +40,12 @@ const Bio = ({ data, matches }) => {
         return (
             <Row>
                 <Col style={styles.introTextContainer}>
-                    <Slide direction="left">
+                    <Slide direction="left" triggerOnce>
                         <TextBody text={data?.about} />
                     </Slide>
                 </Col>
                 <Col style={styles.introImageContainer}>
-                    <Slide direction="right">
+                    <Slide direction="right" triggerOnce>
                         <img style={styles.image} src={data?.imageSource} alt="profile" />
                     </Slide>
                 </Col>
@@ -55,10 +55,10 @@ const Bio = ({ data, matches }) => {
     else {
         return (
             <>
-            <Slide direction="left">
+            <Slide direction="left" triggerOnce>
                 <img style={styles.image} src={data?.imageSource} alt="profile" />
             </Slide>
-            <Slide direction="right">
+            <Slide direction="right" triggerOnce>
                 <div style={styles.introTextContainer}>
                     <TextBody text={data?.about} />
                 </div>
