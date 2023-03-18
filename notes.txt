@@ -10,3 +10,6 @@
 
 
 5. Github workflows do we even want them?
+
+
+weird console error
