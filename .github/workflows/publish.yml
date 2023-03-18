@@ -8,15 +8,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    steps:
     - name: executing remote ssh commands using ssh key
-    uses: appleboy/ssh-action@v0.1.8
-    with:
-      host: ${{ secrets.SSH_HOST }}
-      username: ${{ secrets.SSH_USERNAME }}
-      key: ${{ secrets.SSH_PRIVATE_KEY }}
-      passphrase: ${{ secrets.SSH_PASSPHRASE }}
-      port: ${{ secrets.SSH_PORT }}
-      script: |
-      whoami
-      pwd
-      ls -a
+      uses: appleboy/ssh-action@v0.1.8
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        passphrase: ${{ secrets.SSH_PASSPHRASE }}
+        port: ${{ secrets.SSH_PORT }}
+        script: |
+          whoami
+          pwd
+          ls -a
