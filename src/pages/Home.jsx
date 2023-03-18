@@ -5,10 +5,16 @@ import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 import endpoints from "../app/endpoints.jsx";
 import MyHelmet from "../components/MyHelmet.jsx";
-import { Slide } from "react-awesome-reveal";
-import TextBody from "../components/TextBody.jsx";
+import { Slide, Fade } from "react-awesome-reveal";
 
 
+const styles = {
+  bodyStyle: {
+    fontFamily: "Arial",
+    color: "white",
+    marginBottom: "30px"
+  },
+};
 
 
 const Home = () => {
@@ -55,31 +61,35 @@ const Home = () => {
             <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
               <div className="align-self-center ">
                 <div className="intro mx-auto">
-                <h2 className="mb-1x">
+                
                   <Slide direction="left" >
-                  {data.greetings}
-                  </Slide>
-                  </h2>
-                  <Slide direction="right">
-                  <h1 className="fluidz-48 mb-1x">
-                    <Typewriter
-                      options={{
-                        strings: data.animated_text,
-                        autoStart: true,
-                        loop: true,
-                        deleteSpeed: 5,
-                        pauseFor: 3000,
-                      }}
-                      
-                    />
-                  </h1>
-                  </Slide>
-                  <Slide direction="left">
-                  <TextBody text={data.about} />
+                    <h2 className="mb-1x">{data.greetings}</h2>
                   </Slide>
                   
+                  <Slide direction="right">
+                    <h1 className="fluidz-48 mb-1x">
+                      <Typewriter
+                        options={{
+                          strings: data.animated_text,
+                          autoStart: true,
+                          loop: true,
+                          deleteSpeed: 5,
+                          pauseFor: 3000,
+                        }}
+                      />
+                    </h1>
+                  </Slide>
+
+                  <div style={styles.bodyStyle}>
+                    <Fade cascade duration='1000'>
+                      {data.about.map((sentence) => (
+                        <p>{'» ' + sentence}</p>
+                      ))}
+                    </Fade>
+                  </div>
+                  
                   <div style={{marginBottom: 20}}>
-                  <Slide direction="right" cascade duration="400">
+                  <Slide direction="right" cascade duration="400" damping={0.5}>
                     {data.buttons.map((item) => (
                       <Link to={item.route} key={item.name} target={item.type === "link" ? "_blank" : "_self"} className="text_2">
                         <div id={item.id} className="ac_btn btn ">

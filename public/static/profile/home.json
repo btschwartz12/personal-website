@@ -11,7 +11,11 @@
         "I improve engineering systems",
         "I love to code"
     ],
-    "about": "Junior and teaching assistant at the University of Michigan studying Computer Science. Software Engineer Intern with Aclara Technologies. Check out my dogs, then the stuff below!",
+    "about": [
+        "Junior and teaching assistant at the University of Michigan studying Computer Science.",
+        "Software Engineer Intern with Aclara Technologies.",
+        "Check out my dogs, then the stuff below!"
+    ],
     "img_url": "/static/media/home/picture.png",
     "logo_url": "/static/media/logo.svg",
 

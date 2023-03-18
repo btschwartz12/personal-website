@@ -6,10 +6,10 @@ import { AttentionSeeker } from 'react-awesome-reveal';
 
 
 const getRandomEffect = () => {   
-  const effects = ['bounce', 'flash', 'headShake', 'heartBeat', 'jello', 'pulse', 'rubberBand', 'shake', 'shakeX', 'shakeY', 'swing', 'tada', 'wobble'];
-  const randomIndex = Math.floor(Math.random() * effects.length);
-  const effect = effects[randomIndex] || 'bounce';
-  return effect;
+    const effects = ['bounce', 'jello', 'rubberBand', 'swing', 'tada'];
+    const randomIndex = Math.floor(Math.random() * effects.length);
+    const effect = effects[randomIndex] || 'rubberBand';
+    return effect;
 };
 
 
@@ -21,17 +21,17 @@ const AnimatedWord = ({ word, style }) => {
             {letters.map((letter, index) =>
                 letter === ' ' ? '\u00A0\u00A0\u00A0' :
                 <MovingComponent
-                key={index}
-                type="effect3D"
-                duration="2500ms"
-                delay={`${index * 100}ms`}
-                direction="normal"
-                timing="ease"
-                iteration="infinite"
-                fillMode="none"
-                style={style}
-                >
-                {letter}
+                    key={index}
+                    type="effect3D"
+                    duration="2500ms"
+                    delay={`${index * 100}ms`}
+                    direction="normal"
+                    timing="ease"
+                    iteration="infinite"
+                    fillMode="none"
+                    style={style}
+                    >
+                    {letter}
                 </MovingComponent>
             )}
         </div>

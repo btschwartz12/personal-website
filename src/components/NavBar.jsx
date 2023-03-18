@@ -6,6 +6,8 @@ import ContactPopup from './ContactPopup.jsx';
 import { Link } from 'react-router-dom';
 import { socialIconsImages } from './SocialIcons.jsx';
 
+import { Slide, JackInTheBox } from 'react-awesome-reveal';
+
 const styles = {
   navbarCustom: {
     fontFamily: 'Arial',
@@ -75,7 +77,7 @@ const NavBar = () => {
       style={styles.navbarCustom}
     >
       <Container>
-        
+        <JackInTheBox>
         <Navbar.Brand>
           <Link to="/" className="text_2" onClick={specialHandleLinkClick}>
           <img
@@ -87,7 +89,9 @@ const NavBar = () => {
           />{' '}
           </Link>
         </Navbar.Brand>
-        
+        </JackInTheBox>
+
+        <Slide direction='down'>
         <Navbar.Brand >
           <>
           {socialIcons?.github && (
@@ -102,11 +106,13 @@ const NavBar = () => {
             </a>
           )}
           </>
-          
         </Navbar.Brand>
+        </Slide>
+        
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto ">
+          <Nav >
+            <Slide cascade duration='400'>
             {data?.sections?.map((section, index) => (
               <Link to={section.href} key={section.title} target={section.type === "link" ? "_blank" : "_self"} className="text_2" onClick={handleLinkClick}>
                 <div id={index} style={styles.navLink} >
@@ -114,6 +120,7 @@ const NavBar = () => {
                 </div>
               </Link>
             ))}
+            </Slide>
           </Nav>
         </Navbar.Collapse>
       </Container>
