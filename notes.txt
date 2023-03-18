@@ -3,12 +3,10 @@
 
 
 
-2. custom 404 page so that api can know if wrong route instead of redirect to index?
 
 
 3. Figure out best way/port to serve flask as Daemon
 
 
-4. Should I put back the public dir so I can debug?
 
 5. Github workflows do we even want them?

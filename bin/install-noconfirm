@@ -1,0 +1,11 @@
+#/bin/bash
+set -Eeu pipefail
+set -x
+
+
+pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+pip install -e .
+pip install gunicorn
+
+npm ci

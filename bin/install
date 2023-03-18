@@ -10,7 +10,7 @@ if [ "$proceed" = "y" ]; then
     pip install -e .
     pip install gunicorn
 
-    npm ci --force
+    npm ci
 else
     echo "Please activate your virtual environment and try again."
 fi

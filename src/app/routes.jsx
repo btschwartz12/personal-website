@@ -8,6 +8,7 @@ import Socialicons from "../components/SocialIcons.jsx";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Experience from "../pages/Experience.jsx";
 import Education from "../pages/Education.jsx";
+import NotFound from "./404.jsx";
 
 
 
@@ -24,15 +25,11 @@ const AnimatedRoutes = withRouter(({ location }) => (
     >
       <Routes location={location}>
         <Route exact path="/" element={<Home />} />
-        {/* <Route path={process.env.PUBLIC_URL + '/about'} element={<About />} />
-        <Route path={process.env.PUBLIC_URL + '/projects'} element={<Projects />} /> 
-        <Route path={process.env.PUBLIC_URL + '/experience'} element={<Experience />} />
-        <Route path={process.env.PUBLIC_URL + '/education'} element={<Education />} /> */}
         <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} /> 
         <Route path='/experience' element={<Experience />} />
         <Route path='/education' element={<Education />} />
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </CSSTransition>
   </TransitionGroup>
