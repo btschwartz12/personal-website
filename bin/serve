@@ -2,4 +2,4 @@
 
 
 pkill -f gunicorn
-gunicorn -b localhost:8000 -w 2 BlissPortfolio:app
+gunicorn -b localhost:8000 -D -w 2 BlissPortfolio:app
