@@ -7,6 +7,6 @@ pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 pip install -e .
 pip install gunicorn
-/home/ben/.nvm/versions/node/v19.7.0/bin/npm -v
-/home/ben/.nvm/versions/node/v19.7.0/bin/npx -v
+~/.nvm/versions/node/v19.7.0/bin/npm -v
+~/.nvm/versions/node/v19.7.0/bin/npx -v
 npm ci .
