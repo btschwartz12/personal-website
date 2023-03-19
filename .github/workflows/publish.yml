@@ -29,5 +29,5 @@ jobs:
           source ~/.nvm/nvm.sh  
           ./bin/install-noconfirm
           ./bin/build
-          ./bin/serve
+          echo ./bin/serve
           echo Done

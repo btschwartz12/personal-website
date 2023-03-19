@@ -3,7 +3,3 @@ set -e
 set -x
 
 npx webpack --config webpack.config.js
-
-# npx javascript-obfuscator BlissPortfolio/static/js/bundle.js --reserved-strings '\s*'
-# rm BlissPortfolio/static/js/bundle.js
-# mv BlissPortfolio/static/js/bundle-obfuscated.js BlissPortfolio/static/js/bundle.js
