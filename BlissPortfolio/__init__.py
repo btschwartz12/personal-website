@@ -32,6 +32,10 @@ def serve_react_app(path):
 def a():
     return "dog"
 
+@app.route('/piper/dogs')
+def b():
+    return "piper"
+
 
 import BlissPortfolio.api
 import BlissPortfolio.model
