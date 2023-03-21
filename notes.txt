@@ -1,15 +1,5 @@
+1. Make readme show full instructions
+2. Update github workflows
+3. Try to fix console errors
+4. Wait to load home page for a few sec?
 
-
-
-
-
-
-
-3. Figure out best way/port to serve flask as Daemon
-
-
-
-5. Github workflows do we even want them?
-
-
-weird console error
