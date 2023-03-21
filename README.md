@@ -1,5 +1,0 @@
-# Yes
-
-This is bad.
-
-
