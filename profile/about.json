@@ -1,0 +1,195 @@
+{
+    "meta": {
+        "title": "Ben Schwartz | About",
+        "description": "TODO"
+    },
+    
+    "COMMENT": "TRY QUASIQUOTES",
+    "about": "Hello! My name is **Ben**, a software engineer intern based in Solon, OH. I enjoy building things for the internet, mobile applications, distributed systems, and everything in between. My goal is to contribute to high-performing systems that are reliable, scalable, and able to evolve over time.\n\n\nI am currently an undergrad at the **University of Michigan** studying Computer Science, in my second semester as a teaching assistant for a data structures & algorithms course, and planning to graduate in April 2024. I have also been working as a software engineer intern with **Aclara Technologies** since the summer of 2022.\n\n\nI am planning to intern as a software developer with **Hyland Software** in the summer of 2023, and am always looking for new opportunities to learn and grow as a software developer!",
+    "imageSource": "images/about/profile.png",
+    "icons": [
+        {
+            "title": "Interests",
+            "items" : [
+                {
+                    "icon": "images/about/icons/baseball.png",
+                    "title": "Baseball"
+                },
+                {
+                    "icon": "images/about/icons/golf.png",
+                    "title": "Golf"
+                },
+                {
+                    "icon": "images/about/icons/teaching.png",
+                    "title": "Teaching"
+                },
+                {
+                    "icon": "images/about/icons/cleveland.png",
+                    "title": "Cleveland Sports"
+                },
+                {
+                    "icon": "images/about/icons/tv.png",
+                    "title": "This"
+                },
+                {
+                    "icon": "images/about/icons/dog.png",
+                    "title": "Dogs"
+                },
+                {
+                    "icon": "images/about/icons/personal-projects.png",
+                    "title": "Personal Projects"
+                },
+                {
+                    "icon": "images/about/icons/chatgpt.png",
+                    "title": "ChatGPT"
+                }
+            ]
+        },
+        
+        {
+            "title": "Languages",
+            "items" : [
+                {
+                    "icon": "images/about/icons/python.png",
+                    "title": "Python"
+                },
+                {
+                    "icon": "images/about/icons/java.png",
+                    "title": "Java"
+                },
+                {
+                    "icon": "images/about/icons/js.png",
+                    "title": "JavaScript"
+                },
+                {
+                    "icon": "images/about/icons/c-plus-plus.svg",
+                    "title": "C / C++"
+                },
+                {
+                    "icon": "images/about/icons/c-sharp.svg",
+                    "title": "C #"
+                },
+                {
+                    "icon": "images/about/icons/swift.svg",
+                    "title": "Swift"
+                },
+                {
+                    "icon": "images/about/icons/html_css.svg",
+                    "title": "CSS / HTML"
+                },
+                {
+                    "icon": "images/about/icons/sql.png",
+                    "title": "SQL"
+                },
+                {
+                    "icon": "images/about/icons/bash.png",
+                    "title": "Bash"
+                },
+                {
+                    "icon": "images/about/icons/assembly.png",
+                    "title": "Assembly"
+                }
+        
+            ]
+        },
+        {
+            "title": "Frameworks & Technologies",
+            "items" : [
+                {
+                    "icon": "images/about/icons/android_new.png",
+                    "title": "Android"
+                },
+                {
+                    "icon": "images/about/icons/react.png",
+                    "title": "React"
+                },
+                {
+                    "icon": "images/about/icons/nodejs.png",
+                    "title": "Nodejs"
+                },
+                {
+                    "icon": "images/about/icons/python.png",
+                    "title": "Flask"
+                },
+                {
+                    "icon": "images/about/icons/tkinter.png",
+                    "title": "Tkinter"
+                },
+                {
+                    "icon": "images/about/icons/chrome-extension.svg",
+                    "title": "Chrome Extension"
+                }
+            ]
+        },
+        {
+            "title": "Tools",
+            "items": [
+                {
+                    "icon": "images/about/icons/git.png",
+                    "title": "Git"
+                },
+                {
+                    "icon": "images/about/icons/docker.png",
+                    "title": "Docker"
+                },
+                {
+                    "icon": "images/about/icons/visual-studio.svg",
+                    "title": "Visual Studio"
+                },
+                {
+                    "icon": "images/about/icons/visual-studio-code.png",
+                    "title": "Visual Studio Code"
+                },
+                {
+                    "icon": "images/about/icons/xcode.png",
+                    "title": "Xcode"
+                },
+                {
+                    "icon": "images/about/icons/gdb.svg",
+                    "title": "GDB"
+                },
+                {
+                    "icon": "images/about/icons/mysql.png",
+                    "title": "MySQL"
+                }
+            ]
+        },
+        {
+            "title" : "Platforms",
+            "items": [
+                {
+                    "icon": "images/about/icons/macos.png",
+                    "title": "MacOS"
+                },
+                {
+                    "icon": "images/about/icons/linux.png",
+                    "title": "Linux"
+                },
+                {
+                    "icon": "images/about/icons/windows.svg",
+                    "title": "Windows"
+                },
+                {
+                    "icon": "images/about/icons/android-studio.png",
+                    "title": "Android Studio"
+                },
+                {
+                    "icon": "images/about/icons/ios.svg",
+                    "title": "iOS"
+                },
+                {
+                    "icon": "images/about/icons/fusion.png",
+                    "title": "Fusion"
+                },
+                {
+                    "icon": "images/about/icons/ado.svg",
+                    "title": "Azure"
+                },
+                {
+                    "icon": "images/about/icons/aws.svg",
+                    "title": "AWS"
+                }
+            ]
+        }
+    ] 
+}
