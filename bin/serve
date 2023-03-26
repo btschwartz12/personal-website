@@ -1,5 +1,4 @@
 #/bin/bash
 set -x
 
-pkill -f gunicorn
-gunicorn -b localhost:8000 -w 4 -D BlissPortfolio:app
+npm start

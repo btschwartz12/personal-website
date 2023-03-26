@@ -39,3 +39,6 @@ def b():
 
 import BlissPortfolio.api
 import BlissPortfolio.model
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
