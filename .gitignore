@@ -30,3 +30,5 @@ var
 env/
 __pycache__
 *egg*
+
+log*
