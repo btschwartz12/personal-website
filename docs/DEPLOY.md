@@ -4,6 +4,8 @@
 
 This tutorial will guide you through the process of deploying a Flask app on an Ubuntu machine using WSGI.
 
+This has been adapted from a [tutorial](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uwsgi-and-nginx-on-ubuntu-20-04) by [Digital Ocean](https://www.digitalocean.com/).
+
 ## Prerequisites
 
 Before you begin, make sure you have the following:
@@ -109,31 +111,14 @@ MyProject 1.0.0 sucessfully installed
 
 
 3. Create a WSGI file for your Flask app: 
-    ```
-    # myapp.wsgi
-    import sys
-    sys.path.insert(0, '/path/to/your/app')
-    from app import app as application
-    ```
-    Make sure to replace `/path/to/your/app` with the actual path to your app.
-4. Configure Apache to serve your Flask app: 
-    ```
-    # /etc/apache2/sites-available/myapp.conf
-    <VirtualHost *:80>
-        ServerName myapp.com
-        WSGIScriptAlias / /path/to/myapp.wsgi
-        <Directory /path/to/your/app>
-            Order allow,deny
-            Allow from all
-        </Directory>
-        ErrorLog ${APACHE_LOG_DIR}/error.log
-        CustomLog ${APACHE_LOG_DIR}/access.log combined
-    </VirtualHost>
-    ```
-    Make sure to replace `myapp.com` with your own domain name, and `/path/to/myapp.wsgi` and `/path/to/your/app` with the actual paths to your WSGI file and Flask app directory, respectively.
-5. Enable the new virtual host configuration: `sudo a2ensite myapp.conf`
-6. Restart Apache: `sudo service apache2 restart`
+```python
+# wsgi.py (root of your app)
+from MyProject import app
 
-## Conclusion
+if __name__ == "__main__":
+    app.run()
+```
 
-Congratulations! You have successfully deployed your Flask app on an Ubuntu machine using WSGI. If you encounter any issues or have any questions, feel free to reach out to the Flask community for support.
+### Step 3: Follow Digital Ocean's tutorial
+
+Follow the rest of the tutorial [here](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uwsgi-and-nginx-on-ubuntu-20-04), starting at step 4.
