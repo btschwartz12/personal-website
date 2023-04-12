@@ -13,6 +13,8 @@
 #     return {col[0]: row[idx] for idx, col in enumerate(cursor.description)}
 
 
+
+
 # def get_db():
 #     """Open a new database connection.
 
@@ -43,3 +45,9 @@
 #     if sqlite_db is not None:
 #         sqlite_db.commit()
 #         sqlite_db.close()
+
+import BlissPortfolio
+
+
+def get_db():
+    return BlissPortfolio.mysql

@@ -30,7 +30,6 @@ export default function App() {
       {loading ? (
         <LoadingScreen onFinishLoading={() => setLoading(false)}/>
       ) : (
-        // <BrowserRouter basename="portfolio/"> 
         <BrowserRouter basename={process.env.BASE_NAME}>
           <ScrollToTop>
             <NavBarWithRouter />
