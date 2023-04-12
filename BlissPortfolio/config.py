@@ -2,7 +2,7 @@ import pathlib
 
 
 # Root of this application, useful if it doesn't occupy an entire domain
-APPLICATION_ROOT = '/'
+APPLICATION_ROOT = 'portfolio'
 
 
 # Secret key for encrypting cookies
