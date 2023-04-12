@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   useLocation,
 } from "react-router-dom";
 import withRouter from "../hooks/withRouter.jsx";
@@ -30,9 +30,8 @@ export default function App() {
       {loading ? (
         <LoadingScreen onFinishLoading={() => setLoading(false)}/>
       ) : (
-        
-        // <Router basename={process.env.PUBLIC_URL}>
-        <Router > 
+        // <BrowserRouter basename="portfolio/"> 
+        <BrowserRouter basename={process.env.BASE_NAME}>
           <ScrollToTop>
             <NavBarWithRouter />
             <br />
@@ -40,7 +39,7 @@ export default function App() {
             <AppRoutes />
             </Fade>
           </ScrollToTop>
-        </Router>
+        </BrowserRouter>
         
       )}
       

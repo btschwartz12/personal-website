@@ -59,7 +59,7 @@ const NavBar = () => {
 
   const specialHandleLinkClick = () => {
     setExpanded(false);
-    if (window.location.pathname === '/') {
+    if (window.location.pathname === process.env.BASE_NAME) {
       window.location.reload();
     }
   };

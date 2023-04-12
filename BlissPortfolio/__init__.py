@@ -13,19 +13,21 @@ app.static_folder = 'static'
 
 mysql = MySQL(app)
 
+PREFIX = '/portfolio'
+
 app.template_folder = 'templates'
 
-@app.route("/static/<path:path>")
+@app.route(f"{PREFIX}/static/<path:path>")
 def serve_static(path):
     return flask.send_from_directory(app.static_folder, path)
 
-@app.route("/public/<path:path>")
+@app.route(f"{PREFIX}/public/<path:path>")
 def serve_public(path):
     return flask.send_from_directory(app.public_folder, path)
 
-@app.route("/", defaults={"path": ""})
-@app.route("/<path:path>")
-def serve_react_app(path):
+@app.route(f"{PREFIX}/", defaults={"path": ""})
+@app.route(f"{PREFIX}/<path:path>")
+def serve_react_app(path: str):
     # Strip the app.APPLICATION_ROOT from the beginning
     if path.startswith(app.config['APPLICATION_ROOT']):
         path = path[len(app.config['APPLICATION_ROOT']):]
@@ -34,13 +36,7 @@ def serve_react_app(path):
     if path.startswith("public"):
         return flask.send_from_directory(app.public_folder, path)
     
-    if path == "":
-        context = {
-            'path': str(path) + ' DOGS'
-        }
-        return render_template("index.html", **context)
-    else:
-        flask.abort(404)
+    return render_template("index.html")
 
 
 import BlissPortfolio.api

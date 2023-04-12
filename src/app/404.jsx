@@ -46,7 +46,7 @@ const NotFound = () => {
   return (
     <Fade>
     <div style={styles.container}>
-        <img src="/static/404.png" alt="404" style={styles.image} />
+        <img src="static/404.png" alt="404" style={styles.image} />
         <div style={styles.bubble}>
             <h1 style={styles.heading}>404 :(</h1>
             {isLargeScreen && (

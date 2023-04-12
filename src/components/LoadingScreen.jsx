@@ -74,7 +74,7 @@ const LoadingScreen = ({ onFinishLoading }) => {
             
             <div style={styles.logo}>
             <JackInTheBox >
-                <img src={logoUrl} alt="loading dog" />
+                <img src={logoUrl} alt=" " />
             </JackInTheBox>
             </div>
             

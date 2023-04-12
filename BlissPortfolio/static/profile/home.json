@@ -16,8 +16,8 @@
         "Software Engineer Intern with Aclara Technologies.",
         "Check out my dogs, then the stuff below!"
     ],
-    "img_url": "/static/media/home/picture.png",
-    "logo_url": "/static/media/logo.svg",
+    "img_url": "static/media/home/picture.png",
+    "logo_url": "static/media/logo.svg",
 
     "buttons": [
         {

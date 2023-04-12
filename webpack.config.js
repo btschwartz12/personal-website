@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack');
 
 module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.jsx'),
@@ -33,5 +34,10 @@ module.exports = {
       }
 
     ]
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.BASE_NAME': JSON.stringify('/portfolio/')
+    })
+  ]
 }
