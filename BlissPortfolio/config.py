@@ -21,3 +21,5 @@ MYSQL_HOST = 'localhost'
 MYSQL_USER = 'ben'
 MYSQL_PASSWORD = 'kagxip-xekmUg-1sixte'
 MYSQL_DB = 'mydb'
+
+
