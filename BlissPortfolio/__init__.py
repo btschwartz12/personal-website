@@ -17,7 +17,8 @@ SUPPORTED_ENDPOINTS = [
     'projects',
     'education',
     'experience',
-    'about'
+    'about',
+    ''
 ]
 
 # PREFIX = ''
