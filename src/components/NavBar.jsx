@@ -79,7 +79,7 @@ const NavBar = () => {
       <Container>
         <JackInTheBox>
         <Navbar.Brand>
-          <Link to="/" className="text_2" onClick={specialHandleLinkClick}>
+          <Link to="https://btschwartz.com/" className="text_2" onClick={specialHandleLinkClick}>
           <img
             alt=""
             src={data?.logo?.source}
