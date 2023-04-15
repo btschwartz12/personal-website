@@ -57,12 +57,6 @@ const NavBar = () => {
     setExpanded(false);
   };
 
-  const specialHandleLinkClick = () => {
-    setExpanded(false);
-    if (window.location.pathname === process.env.BASE_NAME) {
-      window.location.reload();
-    }
-  };
 
   return (
     <Navbar
@@ -79,7 +73,7 @@ const NavBar = () => {
       <Container>
         <JackInTheBox>
         <Navbar.Brand>
-          <Link to="https://btschwartz.com/" className="text_2" onClick={specialHandleLinkClick}>
+          <Link className="text_2" to="https://btschwartz.com/">
           <img
             alt=""
             src={data?.logo?.source}
