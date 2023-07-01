@@ -165,7 +165,7 @@ socket = MyProject.sock
 chmod-socket = 660
 vacuum = true
 
-die-on-term = tru
+die-on-term = true
 ```
 5. You can now deactivate the virtual environment.
 ```bash
