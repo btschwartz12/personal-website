@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import getEndpoints from '../app/endpoints.jsx';
+import getEndpoint from '../app/endpoints.jsx';
 import FallbackSpinner from '../components/FallbackSpinner.jsx';
 
 
@@ -16,8 +16,8 @@ const Education = () => {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        getEndpoints().then((endpoints) => {
-            fetch(endpoints.education, {
+        getEndpoint('education').then((endpoint) => {
+            fetch(endpoint, {
                 method: 'GET',
             })
                 .then((res) => res.json())

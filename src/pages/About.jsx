@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import getEndpoints from '../app/endpoints.jsx';
+import getEndpoint from '../app/endpoints.jsx';
 import { useMediaQuery } from 'usehooks-ts';
 import Bio from '../components/Bio.jsx';
 import AboutIcons from '../components/AboutIcons.jsx';
@@ -39,18 +39,24 @@ const About = () => {
   const matches = useMediaQuery('(min-width: 1000px)');
 
   useEffect(() => {
-    getEndpoints().then((endpoints) => {
-      fetch(endpoints.about, { method: 'GET', })
+    getEndpoint('about').then((endpoint) => {
+      fetch(endpoint, { method: 'GET', })
         .then((res) => res.json())
         .then((res) => setData(res))
         .catch((err) => err);
 
-      fetch(endpoints.home, { method: 'GET', })
+    });
+
+    getEndpoint('home').then((endpoint) => {
+
+      fetch(endpoint, { method: 'GET', })
         .then((res) => res.json())
         .then((res) => setHomeData(res))
         .catch((err) => err);
 
     });
+
+    
     
   }, []);
 

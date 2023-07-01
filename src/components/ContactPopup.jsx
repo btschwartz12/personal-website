@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import getEndpoints from '../app/endpoints.jsx';
+import getEndpoint from '../app/endpoints.jsx';
 import FallbackSpinner from './FallbackSpinner.jsx';
 
 
@@ -41,8 +41,8 @@ const ContactPopup = () => {
     const [data, setData] = useState({});
 
     useEffect(() => {
-        getEndpoints().then(endpoints => {
-            fetch(endpoints.contact, {
+        getEndpoint('contact').then(endpoint => {
+            fetch(endpoint, {
                 method: 'GET',
                 })
                 .then((res) => res.json())

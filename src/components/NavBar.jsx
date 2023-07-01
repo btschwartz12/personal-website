@@ -1,7 +1,7 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import React, { useEffect, useState } from 'react';
 import withRouter from '../hooks/withRouter.jsx';
-import getEndpoints from '../app/endpoints.jsx';
+import getEndpoint from '../app/endpoints.jsx';
 import ContactPopup from './ContactPopup.jsx';
 import { Link } from 'react-router-dom';
 import { socialIconsImages } from './SocialIcons.jsx';
@@ -35,8 +35,8 @@ const NavBar = () => {
   const [socialIcons, setSocialIcons] = useState(null);
 
   useEffect(() => {
-      getEndpoints().then((endpoints) => {
-        fetch(endpoints.social, {
+      getEndpoint('social').then((endpoint) => {
+        fetch(endpoint, {
             method: 'GET',
         })
             .then((res) => res.json())
@@ -47,8 +47,8 @@ const NavBar = () => {
   }, []);
 
   useEffect(() => {
-    getEndpoints().then((endpoints) => {
-      fetch(endpoints.navbar, {
+    getEndpoint('navbar').then((endpoint) => {
+      fetch(endpoint, {
         method: 'GET',
       })
         .then((res) => res.json())

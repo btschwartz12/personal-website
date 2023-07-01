@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Container, Row } from "react-bootstrap";
 import { Chrono } from "react-chrono";
 import FallbackSpinner from "../components/FallbackSpinner.jsx";
-import getEndpoints from "../app/endpoints.jsx";
+import getEndpoint from "../app/endpoints.jsx";
 
 import PageTitle from "../components/PageTitle.jsx";
 
@@ -14,8 +14,8 @@ const Experience = () => {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        getEndpoints().then((endpoints) => {
-            fetch(endpoints.experiences, {
+        getEndpoint('experiences').then((endpoint) => {
+            fetch(endpoint, {
                 method: 'GET',
             }).then((res) => res.json()).then((res) => setData(res))
                 .catch((err) => err);
