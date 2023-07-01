@@ -8,7 +8,7 @@ import {
   FaYoutube,
   FaTwitch,
 } from "react-icons/fa";
-import endpoints from "../app/endpoints.jsx";
+import getEndpoints from "../app/endpoints.jsx";
 
 
 // make a map of the social icons
@@ -31,12 +31,15 @@ const Socialicons = () => {
   const [data, setData] = useState(null);
 
     useEffect(() => {
-        fetch(endpoints.social, {
+        getEndpoints().then((endpoints) => {
+          fetch(endpoints.social, {
             method: 'GET',
-        })
+          })
             .then((res) => res.json())
             .then((res) => setData(res.social))
             .catch((err) => err);
+        });
+        
     }, []);
 
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Container, Row } from "react-bootstrap";
 import { Chrono } from "react-chrono";
 import FallbackSpinner from "../components/FallbackSpinner.jsx";
-import endpoints from "../app/endpoints.jsx";
+import getEndpoints from "../app/endpoints.jsx";
 
 import PageTitle from "../components/PageTitle.jsx";
 
@@ -14,10 +14,13 @@ const Experience = () => {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        fetch(endpoints.experiences, {
-            method: 'GET',
-        }).then((res) => res.json()).then((res) => setData(res))
-            .catch((err) => err);
+        getEndpoints().then((endpoints) => {
+            fetch(endpoints.experiences, {
+                method: 'GET',
+            }).then((res) => res.json()).then((res) => setData(res))
+                .catch((err) => err);
+        });
+        
     }, []);
     
 

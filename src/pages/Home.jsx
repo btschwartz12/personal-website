@@ -3,7 +3,7 @@ import "../styles/Home.css";
 import { HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
-import endpoints from "../app/endpoints.jsx";
+import getEndpoints from "../app/endpoints.jsx";
 import MyHelmet from "../components/MyHelmet.jsx";
 import { Slide, Fade } from "react-awesome-reveal";
 
@@ -21,12 +21,15 @@ const Home = () => {
 
 
   useEffect(() => {
-    fetch(endpoints.home, {
-      method: "GET",
-    })
-      .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((err) => err);
+    getEndpoints().then((endpoints) => {
+      fetch(endpoints.home, {
+        method: "GET",
+      })
+        .then((res) => res.json())
+        .then((res) => setData(res))
+        .catch((err) => err);
+    });
+    
   }, []);
 
 

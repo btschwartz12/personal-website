@@ -1,7 +1,7 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import React, { useEffect, useState } from 'react';
 import withRouter from '../hooks/withRouter.jsx';
-import endpoints from '../app/endpoints.jsx';
+import getEndpoints from '../app/endpoints.jsx';
 import ContactPopup from './ContactPopup.jsx';
 import { Link } from 'react-router-dom';
 import { socialIconsImages } from './SocialIcons.jsx';
@@ -35,21 +35,27 @@ const NavBar = () => {
   const [socialIcons, setSocialIcons] = useState(null);
 
   useEffect(() => {
-      fetch(endpoints.social, {
-          method: 'GET',
-      })
-          .then((res) => res.json())
-          .then((res) => setSocialIcons(res.navbar))
-          .catch((err) => err);
+      getEndpoints().then((endpoints) => {
+        fetch(endpoints.social, {
+            method: 'GET',
+        })
+            .then((res) => res.json())
+            .then((res) => setSocialIcons(res.navbar))
+            .catch((err) => err);
+      });
+      
   }, []);
 
   useEffect(() => {
-    fetch(endpoints.navbar, {
-      method: 'GET',
-    })
-      .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((err) => err);
+    getEndpoints().then((endpoints) => {
+      fetch(endpoints.navbar, {
+        method: 'GET',
+      })
+        .then((res) => res.json())
+        .then((res) => setData(res))
+        .catch((err) => err);
+    });
+    
   }, []);
 
 

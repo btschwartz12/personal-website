@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import endpoints from '../app/endpoints.jsx';
+import getEndpoints from '../app/endpoints.jsx';
 import FallbackSpinner from '../components/FallbackSpinner.jsx';
 
 
@@ -16,12 +16,15 @@ const Education = () => {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        fetch(endpoints.education, {
-            method: 'GET',
-        })
-            .then((res) => res.json())
-            .then((res) => setData(res))
-            .catch((err) => err);
+        getEndpoints().then((endpoints) => {
+            fetch(endpoints.education, {
+                method: 'GET',
+            })
+                .then((res) => res.json())
+                .then((res) => setData(res))
+                .catch((err) => err);
+        });
+        
     }, []);
 
     const categories = ['Courses', 'Certificates']
