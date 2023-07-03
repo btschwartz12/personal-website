@@ -27,20 +27,21 @@ export default function App() {
   return (
     <>
       <GlobalStyles />
-      {loading ? (
-        <LoadingScreen onFinishLoading={() => setLoading(false)}/>
-      ) : (
-        <BrowserRouter basename={process.env.BASE_NAME}>
-          <ScrollToTop>
-            <NavBarWithRouter />
-            <br />
-            <Fade>
-            <AppRoutes />
-            </Fade>
-          </ScrollToTop>
-        </BrowserRouter>
-        
-      )}
+        {loading ? (
+          <LoadingScreen onFinishLoading={() => setLoading(false)}/>
+        ) : (
+          <BrowserRouter basename={process.env.BASE_NAME}>
+            <ScrollToTop>
+              <NavBarWithRouter />
+              <br />
+              <Fade>
+              <AppRoutes />
+              </Fade>
+            </ScrollToTop>
+          </BrowserRouter>
+          
+        )}
+      
       
     </>
   );

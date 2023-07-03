@@ -9,9 +9,16 @@ import PageTitle from "../components/PageTitle.jsx";
 // https://github.com/prabhuignoto/react-chrono#theme
 
 
+import { getRandomBgType } from '../components/Background.jsx';
+import ParticlesBg from 'particles-bg';
+
+
 const Experience = () => {
 
     const [data, setData] = useState(null);
+
+    const { type, num } = getRandomBgType();
+
 
     useEffect(() => {
         getEndpoint('experiences').then((endpoint) => {
@@ -26,6 +33,14 @@ const Experience = () => {
 
     return (
         <>
+
+        <ParticlesBg type={type} num={num} styles={{ backgroundColor: 'black'}} 
+                bg={{position: "fixed",
+                    zIndex: -1,
+                    top: 0,
+                    left: 0}} 
+            />
+
         <style type="text/css">
             {`
             .my-card {

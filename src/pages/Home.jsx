@@ -5,7 +5,11 @@ import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 import getEndpoint from "../app/endpoints.jsx";
 import MyHelmet from "../components/MyHelmet.jsx";
-import { Slide, Fade } from "react-awesome-reveal";
+import ParticlesBg from "particles-bg";
+
+import { getRandomBgType } from "../components/Background.jsx";
+
+import "animate.css";
 
 const styles = {
   bodyStyle: {
@@ -15,6 +19,8 @@ const styles = {
     
   },
 };
+
+
 
 const Home = () => {
   const [data, setData] = useState(null);
@@ -32,6 +38,23 @@ const Home = () => {
     
   }, []);
 
+  const button_animations = [
+    "animate__animated animate__fadeInTopRight",
+    "animate__animated animate__fadeInTopLeft",
+    "animate__animated animate__fadeInTopRight",
+    "animate__animated animate__fadeInBottomLeft",
+    "animate__animated animate__fadeInBottomRight",
+  ]
+
+  const bullet_animations = [
+    "animate__animated animate__backInDown",
+    "animate__animated animate__backInRight",
+    "animate__animated animate__backInUp",
+    "animate__animated animate__backInLeft",
+  ]
+
+  const { type, num } = getRandomBgType();
+
 
 
   return (
@@ -39,6 +62,12 @@ const Home = () => {
       <section id="home" className="home">
         {data ? (
           <div>
+            <ParticlesBg type={type} num={num} styles={{ backgroundColor: 'black'}} 
+                bg={{position: "fixed",
+                    zIndex: -1,
+                    top: 0,
+                    left: 0}} 
+            />
             <MyHelmet title={data.meta.title} description={data.meta.description} />
             <div className="intro_sec d-block d-lg-flex align-items-center ">
               <div
@@ -63,11 +92,11 @@ const Home = () => {
                 <div className="align-self-center ">
                   <div className="intro mx-auto">
                   
-                    <Slide triggerOnce direction="left" >
+                    <div className="animate__animated animate__flipInX" style={{marginBottom: "3rem"}}>
                       <h2 className="mb-1x" style={{fontSize: 40, fontWeight: 'bold'}} >{data.greetings}</h2>
-                    </Slide>
+                    </div>
 
-                    <Fade triggerOnce delay={5800}>
+                    {/* <Fade triggerOnce delay={5800}>
                       <h1 className="fluidz-48 mb-1x" >
                         <Typewriter
                           options={{
@@ -79,19 +108,17 @@ const Home = () => {
                           }}
                         />
                       </h1>
-                    </Fade>
+                    </Fade> */}
 
                     <div style={{ ...styles.bodyStyle}}>
-                      <Fade triggerOnce cascade damping={0.5} delay={1000}>
-                        {data.about.map((sentence) => (
-                          <p>{'» ' + sentence}</p>
+                        {data.about.map((sentence, index) => (
+                          <p className={bullet_animations[index % bullet_animations.length] + " animate__delay-1s"}>{'» ' + sentence}</p>
                         ))}
-                      </Fade>
                     </div>
 
                     <div style={{ marginBottom: 20}}>
-                      <Slide triggerOnce cascade damping={0.5} delay={2000} >
-                      {data.buttons.map((item) => (
+                      {data.buttons.map((item, index) => (
+                        <div className={button_animations[index % button_animations.length] + " animate__delay-2s"}>
                         <Link
                           to={item.route}
                           key={item.name}
@@ -105,9 +132,9 @@ const Home = () => {
                             <div className="ring three"></div>
                           </div>
                         </Link>
+                        </div>
                       ))}
-                      </Slide>
-                  </div>
+                    </div>
                     
 
                   </div>

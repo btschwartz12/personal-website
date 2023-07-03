@@ -13,6 +13,9 @@ import { Slide } from 'react-awesome-reveal';
 import { HelmetProvider } from 'react-helmet-async';
 import MyHelmet from '../components/MyHelmet.jsx';
 
+import { getRandomBgType } from '../components/Background.jsx';
+import ParticlesBg from 'particles-bg';
+
 
 
 const styles = {
@@ -32,6 +35,8 @@ const styles = {
   },
   
 };
+
+const { type, num } = getRandomBgType();
 
 const About = () => {
   const [data, setData] = useState(null);
@@ -69,6 +74,13 @@ const About = () => {
 
   return (
     <HelmetProvider>
+
+      <ParticlesBg type={type} num={num} styles={{ backgroundColor: 'black'}} 
+        bg={{position: "fixed",
+              zIndex: -1,
+              top: 0,
+              left: 0}} 
+      />
     <div style={styles.sectionContentContainer}>
         <Container>
           <Row>

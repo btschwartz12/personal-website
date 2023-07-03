@@ -10,10 +10,18 @@ import { HelmetProvider } from "react-helmet-async";
 import MyHelmet from '../components/MyHelmet.jsx';
 
 
+import { getRandomBgType } from '../components/Background.jsx';
+import ParticlesBg from 'particles-bg';
+
+
+
+
 
 
 const Education = () => {
     const [data, setData] = useState(null);
+
+    const { type, num } = getRandomBgType();
 
     useEffect(() => {
         getEndpoint('education').then((endpoint) => {
@@ -31,6 +39,12 @@ const Education = () => {
     const pageTitle = 'Education'
     return (
         <HelmetProvider>
+            <ParticlesBg type={type} num={num} styles={{ backgroundColor: 'black'}} 
+                bg={{position: "fixed",
+                    zIndex: -1,
+                    top: 0,
+                    left: 0}} 
+            />
         {data ? (
             <>
             <MyHelmet 

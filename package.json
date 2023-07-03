@@ -4,11 +4,13 @@
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.2.3",
     "css-loader": "^6.7.3",
     "depcheck": "^1.4.3",
     "eslint-config-react-app": "^7.0.1",
     "javascript-obfuscator": "^4.0.2",
+    "particles-bg": "^2.5.5",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.3",
