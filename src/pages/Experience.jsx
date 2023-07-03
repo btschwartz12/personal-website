@@ -3,6 +3,9 @@ import { Container, Row } from "react-bootstrap";
 import { Chrono } from "react-chrono";
 import FallbackSpinner from "../components/FallbackSpinner.jsx";
 import getEndpoint from "../app/endpoints.jsx";
+import {
+    Badge
+} from 'react-bootstrap';
 
 import PageTitle from "../components/PageTitle.jsx";
 
@@ -13,9 +16,37 @@ import { getRandomBgType } from '../components/Background.jsx';
 import ParticlesBg from 'particles-bg';
 
 
+
+
+
+const styles = {
+
+    badgeStyle: {
+        paddingLeft: 10,
+        paddingRight: 10,
+        paddingTop: 5,
+        paddingBottom: 5,
+        margin: 5,
+    },
+};
+
+
+const badgeColors = {
+    white: 'light',
+    yellow: 'warning',
+    green: 'success',
+    blue: 'primary',
+    cyan: 'info',
+    red: 'danger',
+    gray: 'secondary'
+};
+
+
 const Experience = () => {
 
     const [data, setData] = useState(null);
+
+    const [cardBodies, setCardBodies] = useState(null);
 
     const { type, num } = getRandomBgType();
 
@@ -24,11 +55,39 @@ const Experience = () => {
         getEndpoint('experiences').then((endpoint) => {
             fetch(endpoint, {
                 method: 'GET',
-            }).then((res) => res.json()).then((res) => setData(res))
+            }).then((res) => res.json()).then((res) => {
+                setData(res)
+
+                const cardBodyData = res.experiences.map((experience) => {
+                    return (
+                        <div>
+                            <p 
+                                style={{fontSize: 15}}
+                            >{experience.cardDetailedText}</p>
+                            {experience.tags.map((tag) => (
+                                <Badge
+                                    key={tag.text}
+                                    pill
+                                    bg={badgeColors[tag.color]}
+                                    text='dark'
+                                    style={styles.badgeStyle}
+                                >
+                                    {tag.text}
+                                </Badge>
+                            ))}
+                        </div>
+                    );
+                });
+
+                setCardBodies(cardBodyData);
+
+            })
                 .catch((err) => err);
         });
         
     }, []);
+
+    
     
 
     return (
@@ -83,11 +142,14 @@ const Experience = () => {
             }
             `}
         </style>
+
+
+        
         <Container>
             <Row>
                 <PageTitle title="Experience" />
             </Row>
-            {data ? (
+            {data && cardBodies ? (
                 <Row>
                 <Chrono 
                     items={data.experiences} 
@@ -110,7 +172,7 @@ const Experience = () => {
                         title: 'my-title',
                     }}
                     
-                />
+                >{cardBodies}</Chrono>
             </Row>
             ) : <FallbackSpinner />}
         </Container>
