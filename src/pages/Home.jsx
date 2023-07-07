@@ -62,12 +62,7 @@ const Home = () => {
       <section id="home" className="home">
         {data ? (
           <div>
-            <ParticlesBg type={type} num={num} styles={{ backgroundColor: 'black'}} 
-                bg={{position: "fixed",
-                    zIndex: -1,
-                    top: 0,
-                    left: 0}} 
-            />
+            
             <MyHelmet title={data.meta.title} description={data.meta.description} />
             <div className="intro_sec d-block d-lg-flex align-items-center ">
               <div
@@ -89,26 +84,21 @@ const Home = () => {
                 />
               </div>
               <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
-                <div className="align-self-center ">
-                  <div className="intro mx-auto">
+                
+                <ParticlesBg className="animate__animated animate__flipInX animate__delay-1s" type={type} num={num} style={{ backgroundColor: 'black'}} 
+                  bg={{position: "absolute",
+                      zIndex: -1,
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%"}} 
+                />
+                <div className="align-self-center">
+                  <div className="intro mx-auto" style={{marginTop: "20px"}}>
                   
                     <div className="animate__animated animate__flipInX" style={{marginBottom: "3rem"}}>
                       <h2 className="mb-1x" style={{fontSize: 40, fontWeight: 'bold'}} >{data.greetings}</h2>
                     </div>
-
-                    {/* <Fade triggerOnce delay={5800}>
-                      <h1 className="fluidz-48 mb-1x" >
-                        <Typewriter
-                          options={{
-                            strings: data.animated_text,
-                            autoStart: true,
-                            loop: true,
-                            deleteSpeed: 5,
-                            pauseFor: 3000,
-                          }}
-                        />
-                      </h1>
-                    </Fade> */}
 
                     <div style={{ ...styles.bodyStyle}}>
                         {data.about.map((sentence, index) => (
@@ -136,7 +126,6 @@ const Home = () => {
                       ))}
                     </div>
                     
-
                   </div>
                 </div>
               </div>
@@ -152,3 +141,19 @@ const Home = () => {
 
 
 export default Home;
+
+
+
+{/* <Fade triggerOnce delay={5800}>
+                      <h1 className="fluidz-48 mb-1x" >
+                        <Typewriter
+                          options={{
+                            strings: data.animated_text,
+                            autoStart: true,
+                            loop: true,
+                            deleteSpeed: 5,
+                            pauseFor: 3000,
+                          }}
+                        />
+                      </h1>
+                    </Fade> */}
