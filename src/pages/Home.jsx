@@ -11,6 +11,11 @@ import { getRandomBgType } from "../components/Background.jsx";
 
 import "animate.css";
 
+
+
+
+
+
 const styles = {
   bodyStyle: {
     fontFamily: "Arial",
@@ -47,10 +52,10 @@ const Home = () => {
   ]
 
   const bullet_animations = [
-    "animate__animated animate__backInDown",
-    "animate__animated animate__backInRight",
-    "animate__animated animate__backInUp",
-    "animate__animated animate__backInLeft",
+    "animate__animated animate__lightSpeedInRight",
+    "animate__animated animate__lightSpeedInLeft",
+    "animate__animated animate__lightSpeedInRight",
+    "animate__animated animate__lightSpeedInLeft",
   ]
 
   const { type, num } = getRandomBgType();
@@ -76,12 +81,6 @@ const Home = () => {
                   zIndex: 1,
                 }}
               >
-                <img
-                  src={data.img_url}
-                  alt="lazy loaded background"
-                  loading="lazy"
-                  style={{ visibility: "hidden", position: "absolute" }}
-                />
               </div>
               <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
                 

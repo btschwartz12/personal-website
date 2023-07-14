@@ -36,6 +36,9 @@ const CardView = (props) => {
     const [selectedCategory, setSelectedCategory] = useState(categories[0]);
     const [filteredData, setFilteredData] = useState([]);
 
+    const [featuredFilteredData, setFeaturedFilteredData] = useState([]);
+    const [nonFeaturedFilteredData, setNonFeaturedFilteredData] = useState([]);
+
     // append All to the beginning of categories
     const buttons = ['All', ...categories];
     useEffect(() => {
@@ -65,8 +68,11 @@ const CardView = (props) => {
             return priorityLevels[priority].sort(() => Math.random() - 0.5);
         });
         filtered = randomized;
+        setFeaturedFilteredData(filtered.filter((card) => card.is_featured));
+        setNonFeaturedFilteredData(filtered.filter((card) => !card.is_featured));
     }
     setFilteredData(filtered);
+    
     }, [cards, selectedCategory, page]);
 
 
@@ -120,7 +126,32 @@ const CardView = (props) => {
                 ? (
                 <div className="section-content-container">
                     <Container style={styles.containerStyle}>
-                    <Row xs={1} sm={1} md={2} lg={3} className="g-4">
+                    {page === 'projects' ? (
+                        <>
+                        {featuredFilteredData.length > 0 && (
+                            <Row xs={1} sm={1} md={1} lg={1} className="g-4">
+                                <Fade >
+                                {featuredFilteredData.map((project) => (
+                                    <ProjectCard key={project.title} project={project} />
+                                ))}
+                                </Fade>
+                            </Row>
+                        )}
+                        <br/>
+                        {nonFeaturedFilteredData.length > 0 && (
+                            <Row xs={1} sm={1} md={2} lg={3} className="g-4">
+                                <Fade >
+                                {nonFeaturedFilteredData.slice(0, numberOfItems).map((project) => (
+                                    <ProjectCard key={project.title} project={project} />
+                                ))}
+                                </Fade>
+                            </Row>
+                        )}
+                        </>
+                    ):
+                    (
+                        <>
+                        <Row xs={1} sm={1} md={2} lg={3} className="g-4">
                         <Fade >
                         {filteredData.slice(0, numberOfItems).map((project) => (
                         
@@ -129,7 +160,10 @@ const CardView = (props) => {
                         
                         ))}
                         </Fade>
-                    </Row>
+                        </Row>
+                        </>
+                    )}
+                    
 
                     {!showMore
                         && 
