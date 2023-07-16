@@ -1,6 +1,7 @@
 # blueprints/main.py
 
-from flask import Blueprint, render_template, request, request_finished, send_from_directory
+from flask import Blueprint, render_template, request, send_from_directory
+import requests
 
 main_bp = Blueprint('main', __name__)
 
@@ -38,7 +39,7 @@ def serve_react_app(path: str):
     if client_ip == None:
         client_ip = 'unknown'
 
-    resp = request_finished.get(
+    resp = requests.get(
             'https://btschwartz.com/api/v1/funfact/random', 
             data={'saul': client_ip, 'kim': f'portfolio @ {path}'}, 
             timeout=5)
