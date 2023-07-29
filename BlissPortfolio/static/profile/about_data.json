@@ -1,16 +1,8 @@
 {
-    "meta": {
-        "title": "Ben Schwartz | About",
-        "description": "TODO"
-    },
-    
-    "COMMENT": "TRY QUASIQUOTES",
-    "about": "Hello! My name is **Ben**, a software engineer intern based in Solon, OH. I enjoy building things for the internet, mobile applications, distributed systems, and everything in between. My goal is to contribute to high-performing systems that are reliable, scalable, and able to evolve over time.\n\n\nI am currently an undergrad at the **University of Michigan** studying Computer Science, in my second semester as a teaching assistant for a data structures & algorithms course, and planning to graduate in April 2024. I have also been working as a software engineer intern with **Aclara Technologies** since the summer of 2022.\n\n\nI am planning to intern as a software developer with **Hyland Software** in the summer of 2023, and am always looking for new opportunities to learn and grow as a software developer!",
-    "imageSource": "static/media/about/profile.png",
+    "about": "Hello! My name is **Ben**, a software developer intern based in Solon, OH. I enjoy building things for the internet, mobile applications, integrated systems, and everything in between. My goal is to contribute to high-performing systems that are reliable, scalable, and able to evolve over time.\n\n\nI am currently an undergrad at the **University of Michigan** studying Computer Science and a teaching assistant for a cybersecurity course, planning to graduate in April 2024.\n\n\nI have also been working as a software devloper intern with **Hyland Software** since the summer of 2023, and I'm always looking for new opportunities to learn and grow as a software developer!",
     "icons": [
         {
-            "title": "Interests",
-            "items" : [
+            "items": [
                 {
                     "icon": "static/media/about/icons/baseball.png",
                     "title": "Baseball"
@@ -43,12 +35,11 @@
                     "icon": "static/media/about/icons/chatgpt.png",
                     "title": "ChatGPT"
                 }
-            ]
+            ],
+            "title": "Interests"
         },
-        
         {
-            "title": "Languages",
-            "items" : [
+            "items": [
                 {
                     "icon": "static/media/about/icons/python.png",
                     "title": "Python"
@@ -74,6 +65,14 @@
                     "title": "Swift"
                 },
                 {
+                    "icon": "static/media/about/icons/icp.svg",
+                    "title": "Motoko"
+                },
+                {
+                    "icon": "static/media/about/icons/php.svg",
+                    "title": "PHP"
+                },
+                {
                     "icon": "static/media/about/icons/html_css.svg",
                     "title": "CSS / HTML"
                 },
@@ -89,12 +88,11 @@
                     "icon": "static/media/about/icons/assembly.png",
                     "title": "Assembly"
                 }
-        
-            ]
+            ],
+            "title": "Languages"
         },
         {
-            "title": "Frameworks & Technologies",
-            "items" : [
+            "items": [
                 {
                     "icon": "static/media/about/icons/android_new.png",
                     "title": "Android"
@@ -118,11 +116,47 @@
                 {
                     "icon": "static/media/about/icons/chrome-extension.svg",
                     "title": "Chrome Extension"
+                },
+                {
+                    "icon": "static/media/about/icons/boomi.svg",
+                    "title": "Boomi"
+                },
+                {
+                    "icon": "static/media/about/icons/swagger.svg",
+                    "title": "Swagger"
+                },
+                {
+                    "icon": "static/media/about/icons/dotnet.png",
+                    "title": ".NET Core"
+                },
+                {
+                    "icon": "static/media/about/icons/dotnet.png",
+                    "title": "Razor Libraries"
+                },
+                {
+                    "icon": "static/media/about/icons/blockchain.png",
+                    "title": "Blockchain"
+                },
+                {
+                    "icon": "static/media/about/icons/bootstrap.svg",
+                    "title": "Bootstrap"
+                },
+                {
+                    "icon": "static/media/about/icons/jquery.svg",
+                    "title": "jQuery"
+                },
+                {
+                    "icon": "static/media/about/icons/ef.png",
+                    "title": "Entity Framework"
+                },
+                {
+                    "icon": "static/media/about/icons/icp.svg",
+                    "title": "Internet Computer"
                 }
-            ]
+            ],
+            "title": "Frameworks & Technologies"
         },
         {
-            "title": "Tools",
             "items": [
                 {
                     "icon": "static/media/about/icons/git.png",
@@ -151,15 +185,51 @@
                 {
                     "icon": "static/media/about/icons/mysql.png",
                     "title": "MySQL"
+                },
+                {
+                    "icon": "static/media/about/icons/octopus.svg",
+                    "title": "Octopus Deploy"
+                },
+                {
+                    "icon": "static/media/about/icons/jenkins.svg",
+                    "title": "Jenkins"
+                },
+                {
+                    "icon": "static/media/about/icons/bitbucket.svg",
+                    "title": "Bitbucket"
+                },
+                {
+                    "icon": "static/media/about/icons/jira.svg",
+                    "title": "Jira"
+                },
+                {
+                    "icon": "static/media/about/icons/confluence.png",
+                    "title": "Confluence"
+                },
+                {
+                    "icon": "static/media/about/icons/postman.svg",
+                    "title": "Postman"
+                },
+                {
+                    "icon": "static/media/about/icons/sqlserver.svg",
+                    "title": "SQL Server"
+                },
+                {
+                    "icon": "static/media/about/icons/phpmyadmin.png",
+                    "title": "phpMyAdmin"
                 }
-            ]
+            ],
+            "title": "Tools"
         },
         {
-            "title" : "Platforms",
             "items": [
                 {
                     "icon": "static/media/about/icons/macos.png",
                     "title": "MacOS"
+                },
+                {
+                    "icon": "static/media/about/icons/ubuntu.svg",
+                    "title": "Ubuntu"
                 },
                 {
                     "icon": "static/media/about/icons/linux.png",
@@ -189,7 +259,13 @@
                     "icon": "static/media/about/icons/aws.svg",
                     "title": "AWS"
                 }
-            ]
+            ],
+            "title": "Platforms"
         }
-    ] 
+    ],
+    "imageSource": "static/media/about/profile.png",
+    "meta": {
+        "description": "TODO",
+        "title": "Ben Schwartz | About"
+    }
 }

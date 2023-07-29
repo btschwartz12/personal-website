@@ -32,46 +32,46 @@ const CardView = (props) => {
 
     const { pageTitle, cards, categories, page } = props;
 
+    const buttons = ['All', ...categories];
+
     const [showMore, setShowMore] = useState(false);
-    const [selectedCategory, setSelectedCategory] = useState(categories[0]);
+    const [selectedCategory, setSelectedCategory] = useState(buttons[0]);
     const [filteredData, setFilteredData] = useState([]);
 
     const [featuredFilteredData, setFeaturedFilteredData] = useState([]);
     const [nonFeaturedFilteredData, setNonFeaturedFilteredData] = useState([]);
 
-    // append All to the beginning of categories
-    const buttons = ['All', ...categories];
     useEffect(() => {
-    let filtered;
-    if (cards) {
-        if (selectedCategory === "All") {
-            filtered = cards;
-        } else if (selectedCategory === "Featured") {
-            filtered = cards.filter((card) => card.is_featured);
-        } else {
-            filtered = cards.filter((card) => card.category === selectedCategory);
-        }
-    } else {
-        filtered = [];
-    }
-    if (page === 'projects') {
-        const priorityLevels = {};
-        // Group cards by priority level
-        filtered.forEach((card) => {
-            if (!priorityLevels[card.priority]) {
-                priorityLevels[card.priority] = [];
+        let filtered;
+        if (cards) {
+            if (selectedCategory === "All") {
+                filtered = cards;
+            } else if (selectedCategory === "Featured") {
+                filtered = cards.filter((card) => card.is_featured);
+            } else {
+                filtered = cards.filter((card) => card.category === selectedCategory);
             }
-            priorityLevels[card.priority].push(card);
-        });
-        // Randomly sort each priority level and concatenate the results
-        const randomized = Object.keys(priorityLevels).flatMap((priority) => {
-            return priorityLevels[priority].sort(() => Math.random() - 0.5);
-        });
-        filtered = randomized;
-        setFeaturedFilteredData(filtered.filter((card) => card.is_featured));
-        setNonFeaturedFilteredData(filtered.filter((card) => !card.is_featured));
-    }
-    setFilteredData(filtered);
+        } else {
+            filtered = [];
+        }
+        if (page === 'projects') {
+            const priorityLevels = {};
+            // Group cards by priority level
+            filtered.forEach((card) => {
+                if (!priorityLevels[card.priority]) {
+                    priorityLevels[card.priority] = [];
+                }
+                priorityLevels[card.priority].push(card);
+            });
+            // Randomly sort each priority level and concatenate the results
+            const randomized = Object.keys(priorityLevels).flatMap((priority) => {
+                return priorityLevels[priority].sort(() => Math.random() - 0.5);
+            });
+            filtered = randomized;
+            setFeaturedFilteredData(filtered.filter((card) => card.is_featured));
+            setNonFeaturedFilteredData(filtered.filter((card) => !card.is_featured));
+        }
+        setFilteredData(filtered);
     
     }, [cards, selectedCategory, page]);
 

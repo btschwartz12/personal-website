@@ -1,12 +1,12 @@
 const default_endpoints = {
-    navbar: 'static/profile/navbar.json',
-    home: 'static/profile/home.json',
-    social: 'static/profile/social.json',
-    about: 'static/profile/about.json',
-    education: 'static/profile/education.json',
-    experiences: 'static/profile/experiences.json',
-    projects: 'static/profile/projects.json',
-    contact: 'static/profile/contact.json',
+    navbar: 'static/profile/navbar_data.json',
+    home: 'static/profile/home_data.json',
+    social: 'static/profile/social_data.json',
+    about: 'static/profile/about_data.json',
+    education: 'static/profile/education_data.json',
+    experiences: 'static/profile/experiences_data.json',
+    projects: 'static/profile/projects_data.json',
+    contact: 'static/profile/contact_data.json',
 };
 
 const api_endpoints = {
