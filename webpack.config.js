@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack');
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.jsx'),
@@ -7,7 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'BlissPortfolio', 'static', 'js'),
     filename: 'bundle.js',
   },
-  mode: "development",
+  mode: "production",
   
   module: {
     rules: [
@@ -38,6 +39,7 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env.BASE_NAME': JSON.stringify('/portfolio/')
-    })
+    }),
+    // new BundleAnalyzerPlugin()
   ]
 }
