@@ -3,7 +3,7 @@ import "../styles/Home.css";
 import { HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
-import getEndpoint from "../app/endpoints.jsx";
+import {getEndpoint, preloadEndpoints} from "../app/endpoints.jsx";
 import MyHelmet from "../components/MyHelmet.jsx";
 import ParticlesBg from "particles-bg";
 
@@ -30,17 +30,13 @@ const styles = {
 const Home = () => {
   const [data, setData] = useState(null);
 
-
   useEffect(() => {
-    getEndpoint('home').then((endpoint) => {
-      fetch(endpoint, {
-        method: "GET",
+    getEndpoint('home')
+      .then((res) => {
+        setData(res);
+        preloadEndpoints('home'); // Preload the rest after loading home data, excluding 'home'
       })
-        .then((res) => res.json())
-        .then((res) => setData(res))
-        .catch((err) => err);
-    });
-    
+      .catch((err) => console.error(err));
   }, []);
 
   const button_animations = [

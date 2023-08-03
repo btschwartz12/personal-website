@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import getEndpoint from '../app/endpoints.jsx';
+import { getEndpoint } from '../app/endpoints.jsx';
 import FallbackSpinner from '../components/FallbackSpinner.jsx';
 
 
@@ -25,14 +25,9 @@ const Projects = () => {
     const { type, num } = getRandomBgType();
 
     useEffect(() => {
-        getEndpoint('projects').then((endpoint) => {
-            fetch(endpoint, {
-                method: 'GET',
-            })
-                .then((res) => res.json())
-                .then((res) => setData(res))
-                .catch((err) => err);
-        });
+        getEndpoint('projects')
+            .then((res) => setData(res))
+            .catch((err) => console.error(err));
         
     }, []);
 

@@ -23,30 +23,51 @@ const api_endpoints = {
 const cache = {};
 
 async function getEndpoint(key) {
-    // if the endpoint was previously fetched and stored, return it
+    // If the data was previously fetched and stored, return it
     if (cache[key]) {
         return cache[key];
     }
 
-    // validate key
+    // Validate key
     if (!api_endpoints[key]) {
         throw new Error(`Invalid endpoint key: ${key}`);
     }
 
-    // fetch the endpoint
+    // Try fetching the endpoint
     try {
         const response = await fetch(api_endpoints[key]);
         if (!response.ok) {
             throw new Error(`API response error. Status: ${response.status}`);
         }
 
-        cache[key] = api_endpoints[key];  // store the valid endpoint in cache
+        const data = await response.json(); // Assuming the response is in JSON format
+        cache[key] = data; // Store the fetched data in the cache
+        console.log(`Fetched endpoint for ${key}.`);
+        return data;
     } catch (error) {
         console.log(`Using default endpoint for ${key}. Error: ${error}`);
-        cache[key] = default_endpoints[key];  // store the default endpoint in cache
-    }
+        
+        // Fetch the static data if the API fails
+        const staticResponse = await fetch(default_endpoints[key]);
+        const staticData = await staticResponse.json(); // Assuming the static data is in JSON format
 
-    return cache[key];
+        cache[key] = staticData; // Store the default data in the cache
+        return staticData;
+    }
 }
 
-export default getEndpoint;
+
+async function preloadEndpoints(excludeKey = null) {
+    for (const key in api_endpoints) {
+        if (key === excludeKey) continue; // Skip the excluded key
+
+        // Ignore exceptions and continue preloading the rest
+        try {
+            await getEndpoint(key);
+        } catch (error) {
+            console.error(`Failed to preload endpoint ${key}: ${error}`);
+        }
+    }
+}
+
+export { getEndpoint, preloadEndpoints };

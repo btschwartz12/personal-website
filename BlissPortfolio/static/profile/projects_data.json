@@ -838,7 +838,7 @@
                     "text": "Live"
                 }
             ],
-            "priority": 1,
+            "priority": 2,
             "tags": [
                 {
                     "color": "blue",
@@ -1702,7 +1702,7 @@
                     "text": "GitHub"
                 }
             ],
-            "priority": 1,
+            "priority": 2,
             "tags": [
                 {
                     "color": "blue",
@@ -2040,7 +2040,7 @@
                     "text": "GitHub"
                 }
             ],
-            "priority": 1,
+            "priority": 2,
             "tags": [
                 {
                     "color": "blue",
@@ -2169,7 +2169,7 @@
             "video": "static/media/projects/gpt-convo/gpt-convo.mp4"
         },
         {
-            "bodyText": "Created a a chat app that allows users to interact with an AI chatbot that is pretending to be Saul Goodman. The app is written in Vite and interacts with my own Node.js REST API that handles user chats and interacts with OpenAI's API. I alsointegrated authentication with my REST APIs JWT system.",
+            "bodyText": "Created a a chat app with that allows users to interact with an AI chatbot that is pretending to be Saul Goodman. The app is written in Vite and interacts with my own Node.js REST API integrated with a storage service (chatengine.io) that handles user chats and interacts with OpenAI's API. I also integrated authentication with my REST APIs JWT system.",
             "bubble": {
                 "exists": false
             },

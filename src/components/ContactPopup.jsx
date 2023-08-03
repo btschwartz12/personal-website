@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import getEndpoint from '../app/endpoints.jsx';
+import {getEndpoint} from '../app/endpoints.jsx';
 import FallbackSpinner from './FallbackSpinner.jsx';
 
 
@@ -41,14 +41,9 @@ const ContactPopup = () => {
     const [data, setData] = useState({});
 
     useEffect(() => {
-        getEndpoint('contact').then(endpoint => {
-            fetch(endpoint, {
-                method: 'GET',
-                })
-                .then((res) => res.json())
-                .then((res) => setData(res))
-                .catch((err) => err);
-        });
+        getEndpoint('contact')
+            .then((res) => setData(res))
+            .catch((err) => console.error(err)); // Handle the error here if needed
     }, []);
 
     const handleClose = () => {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Container, Row } from "react-bootstrap";
 import { Chrono } from "react-chrono";
 import FallbackSpinner from "../components/FallbackSpinner.jsx";
-import getEndpoint from "../app/endpoints.jsx";
+import {getEndpoint} from "../app/endpoints.jsx";
 import {
     Badge
 } from 'react-bootstrap';
@@ -52,10 +52,10 @@ const Experience = () => {
 
 
     useEffect(() => {
-        getEndpoint('experiences').then((endpoint) => {
-            fetch(endpoint, {
-                method: 'GET',
-            }).then((res) => res.json()).then((res) => {
+
+        getEndpoint('experiences')
+            .then((res) => {
+
                 setData(res)
 
                 const cardBodyData = res.experiences.map((experience) => {
@@ -80,10 +80,9 @@ const Experience = () => {
                 });
 
                 setCardBodies(cardBodyData);
-
             })
-                .catch((err) => err);
-        });
+            .catch((err) => console.error(err));
+        
         
     }, []);
 

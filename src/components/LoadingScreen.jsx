@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { JackInTheBox } from "react-awesome-reveal";
-import getEndpoint from "../app/endpoints.jsx";
+import {getEndpoint} from "../app/endpoints.jsx";
 
 const styles = {
     container: {
@@ -32,15 +32,10 @@ const LoadingScreen = ({ onFinishLoading }) => {
     const [logoUrl, setLogoUrl] = useState(null);
 
     useEffect(() => {
-        getEndpoint('home').then((endpoint) => {
-            fetch(endpoint, {
-                method: 'GET',
-            })
-                .then((res) => res.json())
-                .then((res) => setLogoUrl(res.logo_url))
-                .catch((err) => err);
-        });
-        
+        getEndpoint('home')
+            .then((res) => setLogoUrl(res.logo_url))
+            .catch((err) => console.error(err));
+                
     }, []);
 
     useEffect(() => {
