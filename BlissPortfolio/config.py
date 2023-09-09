@@ -1,3 +1,4 @@
+import os
 import pathlib
 
 
@@ -6,7 +7,7 @@ APPLICATION_ROOT = 'portfolio'
 
 
 # Secret key for encrypting cookies
-SECRET_KEY = b'Lv\xb6\xe7\xfet5-R\xaeH\xa1\x85LU7v\x011<\\x\x83\xb2'
+SECRET_KEY = os.urandom(24)
 SESSION_COOKIE_NAME = 'login'
 
 
@@ -15,11 +16,4 @@ SESSION_COOKIE_NAME = 'login'
 # UPLOAD_FOLDER = BLISSAPI_ROOT/'var'/'uploads'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 MAX_CONTENT_LENGTH = 16 * 1024 * 1024
-
-
-MYSQL_HOST = 'localhost'
-MYSQL_USER = 'ben'
-MYSQL_PASSWORD = 'kagxip-xekmUg-1sixte'
-MYSQL_DB = 'mydb'
-
 
