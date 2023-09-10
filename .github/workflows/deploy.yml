@@ -1,0 +1,40 @@
+name: Test and Deploy Bliss Portfolio # Replace with the name of your app
+
+on:
+  push:
+    branches:
+      - main  # replace with the branch you want to trigger the deployment
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run Tests and Deploy
+      run: |
+
+        # Navigate to your project directory and pull the latest code
+        cd /home/ben/web/personal-website
+        git pull
+
+        # Activate the virtual environment and run tests
+        source env/bin/activate
+
+        if pytest test_build.py; then
+          echo "Tests passed. Restarting the dev service."
+          systemctl restart blissportfolioTEST
+        else
+          echo "Tests failed. Will not restart the dev service."
+          exit 1
+        fi
+
+        if pytest test_deploy.py; then
+          echo "Tests passed. Restarting prod service."
+          systemctl restart blissportfolio
+        else
+          echo "Tests failed. Will not restart prod service."
+          exit 1
+        fi
